@@ -1,5 +1,7 @@
 package com.ian.service;
 
+import com.ian.controller.req.UserReq;
+import com.ian.controller.resp.UserVO;
 import com.ian.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -9,8 +11,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author ianhau
- * @since 2023-02-18
+ * @since 2023-02-19
  */
 public interface IUserService extends IService<User> {
 
+    UserVO register(UserReq userReq);
+
+    UserVO login(UserReq input);
 }
