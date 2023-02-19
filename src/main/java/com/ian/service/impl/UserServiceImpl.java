@@ -109,10 +109,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     /**
      * 获取当前角色的菜单列表
      *
-     * @param roleFlag
-     * @return
+     * @param roleFlag 角色唯一标识
+     * @return 菜单列表
      */
-    private List<com.ian.entity.Menu> getRoleMenus(String roleFlag) {
+    private List<Menu> getRoleMenus(String roleFlag) {
         Integer roleId = roleMapper.selectByFlag(roleFlag);
         // 当前角色的所有菜单id集合
         List<Integer> menuIds = roleMenuMapper.selectByRoleId(roleId);

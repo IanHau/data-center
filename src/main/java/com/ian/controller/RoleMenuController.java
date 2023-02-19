@@ -1,16 +1,14 @@
 package com.ian.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.ian.common.Result;
+import com.ian.entity.RoleMenu;
+import com.ian.service.IRoleMenuService;
 import org.springframework.web.bind.annotation.*;
+
 import javax.annotation.Resource;
 import java.util.List;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.ian.common.Result;
-
-import com.ian.service.IRoleMenuService;
-import com.ian.entity.RoleMenu;
-
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>

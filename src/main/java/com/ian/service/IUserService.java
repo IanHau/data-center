@@ -1,9 +1,9 @@
 package com.ian.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.ian.controller.req.UserReq;
 import com.ian.controller.resp.UserVO;
 import com.ian.entity.User;
-import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * <p>
@@ -15,7 +15,19 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IUserService extends IService<User> {
 
-    UserVO register(UserReq userReq);
+    /**
+     * 注册
+     *
+     * @param input 用户请求信息
+     * @return 用户信息
+     */
+    UserVO register(UserReq input);
 
+    /**
+     * 登录
+     *
+     * @param input 用户请求信息
+     * @return 用户信息
+     */
     UserVO login(UserReq input);
 }

@@ -1,7 +1,7 @@
 package com.ian.mapper;
 
-import com.ian.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.ian.entity.User;
 
 /**
  * <p>

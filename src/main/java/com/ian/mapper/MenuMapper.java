@@ -1,11 +1,11 @@
 package com.ian.mapper;
 
-import com.ian.entity.Menu;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.ian.entity.Menu;
 
 /**
  * <p>
- *  Mapper 接口
+ * Mapper 接口
  * </p>
  *
  * @author ianhau

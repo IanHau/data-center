@@ -1,11 +1,11 @@
 package com.ian.service.impl;
 
-import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.text.CharSequenceUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ian.entity.Menu;
 import com.ian.mapper.MenuMapper;
 import com.ian.service.IMenuService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author ianhau
@@ -22,12 +22,11 @@ import java.util.stream.Collectors;
 @Service
 public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu> implements IMenuService {
 
-
     @Override
     public List<Menu> findMenus(String name) {
         QueryWrapper<Menu> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByAsc("sort_num");
-        if (StrUtil.isNotBlank(name)) {
+        if (CharSequenceUtil.isNotBlank(name)) {
             queryWrapper.like("name", name);
         }
         // 查询所有数据

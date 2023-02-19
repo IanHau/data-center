@@ -1,13 +1,13 @@
 package com.ian.service;
 
-import com.ian.entity.Menu;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ian.entity.Menu;
 
 import java.util.List;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author ianhau
@@ -15,5 +15,11 @@ import java.util.List;
  */
 public interface IMenuService extends IService<Menu> {
 
-    List<Menu> findMenus(String s);
+    /**
+     * 获取菜单信息
+     *
+     * @param menuName 菜单名
+     * @return 菜单信息
+     */
+    List<Menu> findMenus(String menuName);
 }
