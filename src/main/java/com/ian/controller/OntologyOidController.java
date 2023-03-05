@@ -25,7 +25,7 @@ public class OntologyOidController {
 
     @PostMapping("/create")
     public Result save(@RequestBody OntologyOid input) {
-        ontologyOidService.create(input);
+        ontologyOidService.createOid(input);
         return Result.success();
     }
 
@@ -63,7 +63,7 @@ public class OntologyOidController {
     @GetMapping("/tree")
     @ResponseBody
     public Result tree() {
-        return Result.success(ontologyOidService.tree());
+        return Result.success(ontologyOidService.trees(null));
     }
 }
 

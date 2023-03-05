@@ -22,7 +22,7 @@ public class OntologyPropertyService {
     @Resource
     MongoTemplate mongoTemplate;
 
-    public List<OntologyProperty> ontologyProperties(String oid) {
+    public List<OntologyProperty> loadByOid(String oid) {
         return mongoTemplate.find(
                 new Query(Criteria.where("ontologyOid").is(oid)),
                 OntologyProperty.class, "ontologyProperty");

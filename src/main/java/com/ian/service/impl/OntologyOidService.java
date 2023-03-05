@@ -2,11 +2,13 @@ package com.ian.service.impl;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.ian.config.OidGenerator;
 import com.ian.controller.resp.OidTreeVO;
 import com.ian.controller.resp.OntologyOidVO;
 import com.ian.entity.OntologyOid;
 import com.ian.entity.OntologyProperty;
 import com.ian.exception.ServiceException;
+import com.ian.utils.OCID;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.mongodb.core.FindAndReplaceOptions;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -17,10 +19,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static cn.hutool.core.lang.Validator.validateNotEmpty;
@@ -41,6 +40,18 @@ public class OntologyOidService {
     MongoTemplate mongoTemplate;
     @Resource
     OntologyPropertyService propertyService;
+    @Resource
+    OidGenerator oidGenerator;
+
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Throwable.class)
+    public void createOid(OntologyOid input) {
+        validateNotEmpty(input.getTerm(), "term.empty");
+        validateNotEmpty(input.getAlias(), "alias.empty");
+        validateNotEmpty(input.getDefinition(), "definition.empty");
+        String iriString = oidGenerator.next();
+        input.setOid(iriString);
+        create(input);
+    }
 
     @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Throwable.class)
     public void create(OntologyOid input) {
@@ -53,8 +64,11 @@ public class OntologyOidService {
         entity.setAlias(input.getAlias());
         entity.setOid(input.getOid());
         entity.setDefinition(input.getDefinition());
-        termDuplicationCheck(null, entity.getTerm());
-        oidDuplicationCheck(null, entity.getOid());
+
+        entity.setId(OCID.get().toHexString().toLowerCase());
+
+        termDuplicationCheck(null,entity.getTerm());
+        oidDuplicationCheck(null,entity.getOid());
         mongoTemplate.insert(entity);
     }
 
@@ -119,13 +133,21 @@ public class OntologyOidService {
         return leaves;
     }
 
-    public Object tree() {
+    public List<OidTreeVO> tree() {
         List<OntologyOid> firstLevels = loadByParent(null);
         return firstLevels.stream().map(it -> {
             List<OntologyOid> children = loadByParent(it.getOid());
             List<OidTreeVO> vos = children.stream().map(child -> OidTreeVO.build(child, null)).collect(Collectors.toList());
             return OidTreeVO.build(it, vos);
         }).collect(Collectors.toList());
+    }
+
+    public List<OidTreeVO> trees(String oid) {
+        List<OntologyOid> firstLevels = loadByParent(oid);
+        if (CollectionUtils.isEmpty(firstLevels)) {
+            return new ArrayList<>();
+        }
+        return firstLevels.stream().map(f -> OidTreeVO.build(f, trees(f.getOid()))).collect(Collectors.toList());
     }
 
     private void travel(OntologyOid ontologyOid, Set<OntologyOidVO> leaves) {
@@ -139,7 +161,7 @@ public class OntologyOidService {
     }
 
     private void fillOntologyProperties(OntologyOid ontologyOid, Set<OntologyOidVO> leaves) {
-        List<OntologyProperty> ontologyProperties = propertyService.ontologyProperties(ontologyOid.getOid());
+        List<OntologyProperty> ontologyProperties = propertyService.loadByOid(ontologyOid.getOid());
         leaves.add(OntologyOidVO.builder().oid(ontologyOid.getOid())
                 .term(ontologyOid.getTerm())
                 .alias(ontologyOid.getAlias())
