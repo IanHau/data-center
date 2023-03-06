@@ -34,5 +34,26 @@ public class OntologyPropertyController {
     public Result create(@RequestBody OntologyProperty input) {
         return Result.success(ontologyPropertyService.loadByOid(input.getOntologyOid()));
     }
+
+    @PostMapping("/delete")
+    @ResponseBody
+    public Result delete(@RequestBody OntologyProperty input) {
+        ontologyPropertyService.delete(input.getId());
+        return Result.success();
+    }
+
+    @PostMapping("/create")
+    @ResponseBody
+    public Result save(@RequestBody OntologyProperty input) {
+        ontologyPropertyService.createProperty(input);
+        return Result.success();
+    }
+
+    @PostMapping("/update")
+    @ResponseBody
+    public Result update(@RequestBody OntologyProperty input) {
+        ontologyPropertyService.update(input);
+        return Result.success();
+    }
 }
 
