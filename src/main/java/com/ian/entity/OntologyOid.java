@@ -1,5 +1,6 @@
 package com.ian.entity;
 
+import com.google.common.base.CaseFormat;
 import com.migozi.db.mongo.CriteriaBuilder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -63,6 +64,10 @@ public class OntologyOid {
         private String queryKey;
         private String term;
         private String oid;
+    }
+
+    public String getTableName() {
+        return CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, getTerm());
     }
 
 }

@@ -2,14 +2,21 @@ package com.ian.service.impl;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.google.common.collect.ImmutableMap;
 import com.ian.config.OidGenerator;
+import com.ian.constant.OIDStr;
 import com.ian.controller.resp.OidTreeVO;
 import com.ian.controller.resp.OntologyOidVO;
 import com.ian.entity.OntologyOid;
 import com.ian.entity.OntologyProperty;
+import com.ian.entity.Record;
 import com.ian.exception.ServiceException;
 import com.ian.utils.OCID;
+import com.migozi.ApplicationException;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.exception.ExceptionUtils;
+import org.bson.Document;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.data.mongodb.core.FindAndReplaceOptions;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -67,8 +74,8 @@ public class OntologyOidService {
 
         entity.setId(OCID.get().toHexString().toLowerCase());
 
-        termDuplicationCheck(null,entity.getTerm());
-        oidDuplicationCheck(null,entity.getOid());
+        termDuplicationCheck(null, entity.getTerm());
+        oidDuplicationCheck(null, entity.getOid());
         mongoTemplate.insert(entity);
     }
 
@@ -133,21 +140,12 @@ public class OntologyOidService {
         return leaves;
     }
 
-    public List<OidTreeVO> tree() {
-        List<OntologyOid> firstLevels = loadByParent(null);
-        return firstLevels.stream().map(it -> {
-            List<OntologyOid> children = loadByParent(it.getOid());
-            List<OidTreeVO> vos = children.stream().map(child -> OidTreeVO.build(child, null)).collect(Collectors.toList());
-            return OidTreeVO.build(it, vos);
-        }).collect(Collectors.toList());
-    }
-
-    public List<OidTreeVO> trees(String oid) {
+    public List<OidTreeVO> tree(String oid) {
         List<OntologyOid> firstLevels = loadByParent(oid);
         if (CollectionUtils.isEmpty(firstLevels)) {
             return new ArrayList<>();
         }
-        return firstLevels.stream().map(f -> OidTreeVO.build(f, trees(f.getOid()))).collect(Collectors.toList());
+        return firstLevels.stream().map(f -> OidTreeVO.build(f, tree(f.getOid()))).collect(Collectors.toList());
     }
 
     private void travel(OntologyOid ontologyOid, Set<OntologyOidVO> leaves) {
@@ -160,6 +158,15 @@ public class OntologyOidService {
         children.forEach(it -> travel(it, leaves));
     }
 
+    public Record loadRecord(String tableName, String idName, String id) {
+        Document document = mongoTemplate.getCollection(tableName)
+                .find(new Document(ImmutableMap.of(idName, id))).first();
+        if (document == null) {
+            throw new ApplicationException("record not exist");
+        }
+        return Record.fromMap(document);
+    }
+
     private void fillOntologyProperties(OntologyOid ontologyOid, Set<OntologyOidVO> leaves) {
         List<OntologyProperty> ontologyProperties = propertyService.loadByOid(ontologyOid.getOid());
         leaves.add(OntologyOidVO.builder().oid(ontologyOid.getOid())
@@ -169,7 +176,7 @@ public class OntologyOidService {
                 .build());
     }
 
-    private OntologyOid loadByOid(String oid) {
+    public OntologyOid loadByOid(String oid) {
         return mongoTemplate.findOne(new Query(Criteria.where("oid").is(oid)), OntologyOid.class);
     }
 
@@ -208,5 +215,26 @@ public class OntologyOidService {
         Query query = new Query();
         query.addCriteria(Criteria.where("parent").is(oid));
         return mongoTemplate.find(query, OntologyOid.class);
+    }
+
+    public void saveRecord(OntologyOid ontologyOid, Map<String, Object> data) throws DuplicateKeyException {
+        String identifier = "_id";
+        String tableName = ontologyOid.getTableName();
+        data.computeIfAbsent(identifier, key -> OCID.get().toHexString().toLowerCase());
+        try {
+            mongoTemplate.insert(data, tableName);
+        } catch (DuplicateKeyException e) {
+            log.error("data:{},ontologyOid:{}, e:{} ", data, ontologyOid.getOid(), ExceptionUtils.getStackTrace(e));
+            throw new ServiceException("400", "duplicate code");
+        }
+    }
+
+    public void removeRecord(String tableName, String id) {
+        Query query = Query.query(Criteria.where("_id").is(id));
+        mongoTemplate.getCollection(tableName).deleteOne(query.getQueryObject());
+    }
+
+    public List<OntologyOid> allTable() {
+        return loadByParent(OIDStr.GERMPLASM_OID);
     }
 }

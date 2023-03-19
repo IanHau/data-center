@@ -1,10 +1,8 @@
 package com.ian.service.impl;
 
-import com.ian.entity.OntologyOid;
 import com.ian.entity.OntologyProperty;
 import com.ian.exception.ServiceException;
 import com.ian.utils.OCID;
-import com.migozi.ApplicationException;
 import org.springframework.data.mongodb.core.FindAndReplaceOptions;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -15,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static cn.hutool.core.lang.Validator.validateNotEmpty;
 
@@ -34,6 +33,12 @@ public class OntologyPropertyService {
     public List<OntologyProperty> loadByOid(String oid) {
         return mongoTemplate.find(
                 new Query(Criteria.where("ontologyOid").is(oid)),
+                OntologyProperty.class, "ontologyProperty");
+    }
+
+    public OntologyProperty loadByTerm(String term) {
+        return mongoTemplate.findOne(
+                new Query(Criteria.where("term").is(term)),
                 OntologyProperty.class, "ontologyProperty");
     }
 
@@ -77,7 +82,7 @@ public class OntologyPropertyService {
 
     @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Throwable.class)
     public void update(OntologyProperty input) {
-        validateNotEmpty(input.getId(),"id required");
+        validateNotEmpty(input.getId(), "id required");
         OntologyProperty entity = new OntologyProperty();
         entity.setId(input.getId());
         entity.setOntologyOid(input.getOntologyOid());
@@ -98,4 +103,17 @@ public class OntologyPropertyService {
                 "ontologyProperty",
                 OntologyProperty.class);
     }
+
+    public Object allProperties(List<String> ontologyOids) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("ontologyOid").in(ontologyOids));
+        List<OntologyProperty> properties = mongoTemplate.find(query, OntologyProperty.class, OntologyProperty.COLLECTION_NAME);
+        return properties.stream().collect(Collectors.groupingBy(OntologyProperty::getOntologyOid));
+    }
+
+    public List<OntologyProperty> tableHeaders(String ontologyOid) {
+        return mongoTemplate.find(new Query(Criteria.where("ontologyOid").is(ontologyOid)), OntologyProperty.class, OntologyProperty.COLLECTION_NAME);
+    }
+
+
 }

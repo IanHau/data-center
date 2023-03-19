@@ -52,7 +52,6 @@ public class OntologyOidController {
     }
 
     @RequestMapping("/leaves")
-    @ResponseBody
     public Result loadLeaves(@RequestBody OntologyOid input) {
         if (StringUtils.isBlank(input.getTerm()) && StringUtils.isBlank(input.getOid())) {
             throw new ServiceException("400", "oid and term both empty.");
@@ -61,9 +60,8 @@ public class OntologyOidController {
     }
 
     @GetMapping("/tree")
-    @ResponseBody
     public Result tree() {
-        return Result.success(ontologyOidService.trees(null));
+        return Result.success(ontologyOidService.tree(null));
     }
 }
 
