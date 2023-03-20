@@ -3,11 +3,18 @@ package com.ian.service.impl;
 import cn.hutool.db.sql.Condition;
 import com.baomidou.mybatisplus.core.toolkit.ObjectUtils;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.ian.common.OntologyPropertyDataType;
 import com.ian.controller.req.GermplasmReq;
 import com.ian.entity.OntologyOid;
 import com.ian.entity.OntologyProperty;
 import com.ian.entity.Record;
+import com.ian.exception.ServiceException;
+import com.ian.utils.WorkbookUtils;
 import com.migozi.ApplicationException;
+import org.apache.commons.collections4.MapUtils;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -16,7 +23,10 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.Map;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * 平台OID数据存储服务
@@ -33,8 +43,8 @@ public class OntologyOidStoreService {
     @Resource
     private OntologyPropertyService ontologyPropertyService;
 
-//    @Resource
-//    private WorkbookUtils workbookUtils;
+    @Resource
+    private WorkbookUtils workbookUtils;
 
     @Resource
     private MongoTemplate mongoTemplate;
@@ -77,4 +87,75 @@ public class OntologyOidStoreService {
         query.with(pageable);
         return new PageImpl<>(mongoTemplate.find(query, Record.class, tableName), pageable, total);
     }
+
+    public void importFromExcel(InputStream is, String term) throws IOException {
+        String oid = ontologyOidService.loadByTerm(term).getOid();
+        List<Map<String, Object>> data = convertSheetToList(is, oid);
+        Map<String, OntologyProperty> propertyMap = ontologyPropertyService.loadByOid(oid).stream().collect(Collectors.toMap(OntologyProperty::getName, v -> v));
+        OntologyOid ontologyOid = ontologyOidService.loadByOid(oid);
+        try {
+            data.forEach(it -> {
+                propertyMap.forEach((key, value) -> {
+                    if (value.getRequired() != null && value.getRequired() && (it.get(key) == null)) {
+                        throw new IllegalArgumentException();
+                    }
+                });
+                ontologyOidService.saveRecord(ontologyOid, it);
+            });
+        } catch (Exception e) {
+            throw new ServiceException("500", "必填项不能为空");
+        }
+    }
+
+    private List<Map<String, Object>> convertSheetToList(InputStream is, String oid) throws IOException {
+        XSSFWorkbook workbook = new XSSFWorkbook(is);
+        XSSFSheet sheet = workbook.getSheetAt(0);
+        int num = sheet.getLastRowNum();
+        List<Map<String, Object>> data = new ArrayList<>(num);
+        Map<String/*showName*/, String/*name*/> showNameWithName = ontologyPropertyService.loadByOid(oid)
+                .stream()
+                .collect(Collectors.toMap(OntologyProperty::getShowName, OntologyProperty::getName));
+
+        Map<String/*showName*/, String/*name*/> showNameWithDataType = ontologyPropertyService.loadByOid(oid)
+                .stream()
+                .collect(Collectors.toMap(OntologyProperty::getShowName, OntologyProperty::getDataType));
+
+        String tableName = ontologyOidService.loadByOid(oid).getTableName();
+        List<Map> exists = mongoTemplate.findAll(Map.class, tableName)
+                .stream()
+                .peek(r -> r.remove("_id"))
+                .collect(Collectors.toList());
+        XSSFRow header = sheet.getRow(0);
+        int cellNumber = header.getPhysicalNumberOfCells();
+        List<String> cellName = new ArrayList<>();
+        for (int i = 0; i < cellNumber; i++) {
+            cellName.add(workbookUtils.getCellValue(header, i, String.class, ""));
+        }
+        if (cellName.stream().anyMatch(name -> !showNameWithName.containsKey(name))) {
+            throw new ApplicationException("不正确的文件数据!");
+        }
+        Map<String, Object> map;
+        for (int i = 1; i <= num; i++) {
+            map = new HashMap<>();
+            XSSFRow row = sheet.getRow(i);
+            for (int index = 0; index < cellNumber; index++) {
+                String dataType = MapUtils.getString(showNameWithDataType, cellName.get(index), OntologyPropertyDataType.String.name());
+                if (OntologyPropertyDataType.Date.name().equals(dataType)) {
+                    Date value = workbookUtils.getCellValue(row, index, Date.class, null);
+                    map.put(showNameWithName.get(cellName.get(index)), value);
+                    continue;
+                }
+                String value = workbookUtils.getCellValue(row, index, String.class, "");
+                map.put(showNameWithName.get(cellName.get(index)), value);
+            }
+            Map<String, Object> finalMap = map;
+            if (exists.parallelStream().anyMatch(x -> x.equals(finalMap))) {
+                continue;
+            }
+            data.add(map);
+        }
+        return data;
+    }
+
+
 }

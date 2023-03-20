@@ -180,7 +180,7 @@ public class OntologyOidService {
         return mongoTemplate.findOne(new Query(Criteria.where("oid").is(oid)), OntologyOid.class);
     }
 
-    private OntologyOid loadByTerm(String term) {
+    public OntologyOid loadByTerm(String term) {
         return mongoTemplate.findOne(new Query(Criteria.where("term").is(term)), OntologyOid.class);
     }
 

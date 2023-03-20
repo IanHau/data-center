@@ -1,8 +1,14 @@
 package com.ian.service.impl;
 
+import com.ian.controller.req.GermplasmReq;
 import com.ian.entity.OntologyProperty;
 import com.ian.exception.ServiceException;
 import com.ian.utils.OCID;
+import com.ian.utils.WorkbookUtils;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.FindAndReplaceOptions;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -12,6 +18,8 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,18 +36,22 @@ import static cn.hutool.core.lang.Validator.validateNotEmpty;
 @Service
 public class OntologyPropertyService {
     @Resource
-    MongoTemplate mongoTemplate;
+    private MongoTemplate mongoTemplate;
+    @Resource
+    private WorkbookUtils workbookUtils;
+    @Resource
+    private OntologyOidService ontologyOidService;
 
     public List<OntologyProperty> loadByOid(String oid) {
         return mongoTemplate.find(
                 new Query(Criteria.where("ontologyOid").is(oid)),
-                OntologyProperty.class, "ontologyProperty");
+                OntologyProperty.class, OntologyProperty.COLLECTION_NAME);
     }
 
     public OntologyProperty loadByTerm(String term) {
         return mongoTemplate.findOne(
                 new Query(Criteria.where("term").is(term)),
-                OntologyProperty.class, "ontologyProperty");
+                OntologyProperty.class, OntologyProperty.COLLECTION_NAME);
     }
 
     public void delete(String id) {
@@ -116,4 +128,21 @@ public class OntologyPropertyService {
     }
 
 
+    public void template(String term, HttpServletResponse response) {
+        XSSFWorkbook workbook = workbookUtils.createWorkbook();
+        XSSFSheet sheet = workbookUtils.createSheet(workbook, "模版");
+        XSSFRow row = sheet.createRow(0);
+        String oid = ontologyOidService.loadByTerm(term).getOid();
+        List<OntologyProperty> properties = loadByOid(oid);
+        int length = properties.size();
+        for (int i = 0; i < length; i++) {
+            row.createCell(i);
+            workbookUtils.setCell(row.getCell(i), properties.get(i).getShowName());
+        }
+        try {
+            WorkbookUtils.writeToResponse(response, workbook);
+        } catch (IOException e) {
+            throw new ServiceException("500","生成模版失败");
+        }
+    }
 }

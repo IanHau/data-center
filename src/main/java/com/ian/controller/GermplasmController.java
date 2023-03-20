@@ -7,9 +7,13 @@ import com.ian.service.impl.OntologyOidStoreService;
 import com.ian.service.impl.OntologyPropertyService;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author ianhau
@@ -23,11 +27,6 @@ public class GermplasmController {
     OntologyOidService ontologyOidService;
     @Resource
     OntologyPropertyService ontologyPropertyService;
-
-    @PostMapping("/list")
-    public Result list() {
-        return Result.success();
-    }
 
     @GetMapping("/allTables")
     public Result allTables() {
@@ -44,8 +43,15 @@ public class GermplasmController {
         return Result.success(ontologyPropertyService.tableHeaders(input.getOntologyOid()));
     }
 
-    @PostMapping("/template")
-    public void exportTemplate(@RequestBody GermplasmReq input, HttpServletResponse response) {
-//        ontologyPropertyService.template(input,response);
+    @GetMapping("/template/{term}")
+    public void exportTemplate(HttpServletResponse response, @PathVariable String term) {
+        ontologyPropertyService.template(term,response);
+    }
+
+    @PostMapping("/import/{term}")
+    @ResponseBody
+    public Result importFromExcel(@RequestParam("file") MultipartFile file, @PathVariable String term) throws IOException {
+        ontologyOidStoreService.importFromExcel(file.getInputStream(), term);
+        return new Result();
     }
 }
