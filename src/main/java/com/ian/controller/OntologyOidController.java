@@ -61,7 +61,7 @@ public class OntologyOidController {
 
     @GetMapping("/tree")
     public Result tree() {
-        return Result.success(ontologyOidService.tree(null));
+        return Result.success(ontologyOidService.tree());
     }
 }
 

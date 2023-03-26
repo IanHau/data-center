@@ -12,8 +12,6 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
-import java.util.Map;
 
 /**
  * @author ianhau
@@ -27,6 +25,11 @@ public class GermplasmController {
     OntologyOidService ontologyOidService;
     @Resource
     OntologyPropertyService ontologyPropertyService;
+
+    @GetMapping("/number/{term}")
+    public Result list(@PathVariable String term) {
+        return Result.success(ontologyOidStoreService.number(term));
+    }
 
     @GetMapping("/allTables")
     public Result allTables() {
@@ -45,7 +48,7 @@ public class GermplasmController {
 
     @GetMapping("/template/{term}")
     public void exportTemplate(HttpServletResponse response, @PathVariable String term) {
-        ontologyPropertyService.template(term,response);
+        ontologyPropertyService.template(term, response);
     }
 
     @PostMapping("/import/{term}")

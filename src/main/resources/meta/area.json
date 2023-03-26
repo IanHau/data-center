@@ -1,0 +1,3662 @@
+[
+  {
+    "code": "1101",
+    "name": "北京市",
+    "shortName": "北京",
+    "nameCapitalPy": "BJS",
+    "shortNameCapitalPy": "BJ",
+    "nameFullPy": "BEIJINGSHI",
+    "shortNameFullPy": "BEIJING",
+    "municipality": true
+  },
+  {
+    "code": "1201",
+    "name": "天津市",
+    "shortName": "天津",
+    "nameCapitalPy": "TJS",
+    "shortNameCapitalPy": "TJ",
+    "nameFullPy": "TIANJINSHI",
+    "shortNameFullPy": "TIANJIN",
+    "municipality": true
+  },
+  {
+    "code": "3101",
+    "name": "上海市",
+    "shortName": "上海",
+    "nameCapitalPy": "SHS",
+    "shortNameCapitalPy": "SH",
+    "nameFullPy": "SHANGHAISHI",
+    "shortNameFullPy": "SHANGHAI",
+    "municipality": true
+  },
+  {
+    "code": "5001",
+    "name": "重庆市",
+    "shortName": "重庆",
+    "nameCapitalPy": "ZQS",
+    "shortNameCapitalPy": "ZQ",
+    "nameFullPy": "ZHONGQINGSHI",
+    "shortNameFullPy": "ZHONGQING",
+    "municipality": true
+  },
+  {
+    "code": "1300",
+    "name": "河北省",
+    "shortName": "河北",
+    "nameCapitalPy": "HBS",
+    "nameFullPy": "HEBEISHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "1301",
+        "name": "石家庄市",
+        "shortName": "石家庄",
+        "nameCapitalPy": "SJZS",
+        "shortNameCapitalPy": "SJZ",
+        "nameFullPy": "SHIJIAZHUANGSHI",
+        "shortNameFullPy": "SHIJIAZHUANG",
+        "municipality": false
+      },
+      {
+        "code": "1302",
+        "name": "唐山市",
+        "shortName": "唐山",
+        "nameCapitalPy": "TSS",
+        "shortNameCapitalPy": "TS",
+        "nameFullPy": "TANGSHANSHI",
+        "shortNameFullPy": "TANGSHAN",
+        "municipality": false
+      },
+      {
+        "code": "1303",
+        "name": "秦皇岛市",
+        "shortName": "秦皇岛",
+        "nameCapitalPy": "QHDS",
+        "shortNameCapitalPy": "QHD",
+        "nameFullPy": "QINHUANGDAOSHI",
+        "shortNameFullPy": "QINHUANGDAO",
+        "municipality": false
+      },
+      {
+        "code": "1304",
+        "name": "邯郸市",
+        "shortName": "邯郸",
+        "nameCapitalPy": "HDS",
+        "shortNameCapitalPy": "HD",
+        "nameFullPy": "HANDANSHI",
+        "shortNameFullPy": "HANDAN",
+        "municipality": false
+      },
+      {
+        "code": "1305",
+        "name": "邢台市",
+        "shortName": "邢台",
+        "nameCapitalPy": "XTS",
+        "shortNameCapitalPy": "XT",
+        "nameFullPy": "XINGTAISHI",
+        "shortNameFullPy": "XINGTAI",
+        "municipality": false
+      },
+      {
+        "code": "1306",
+        "name": "保定市",
+        "shortName": "保定",
+        "nameCapitalPy": "BDS",
+        "shortNameCapitalPy": "BD",
+        "nameFullPy": "BAODINGSHI",
+        "shortNameFullPy": "BAODING",
+        "municipality": false
+      },
+      {
+        "code": "1307",
+        "name": "张家口市",
+        "shortName": "张家口",
+        "nameCapitalPy": "ZJKS",
+        "shortNameCapitalPy": "ZJK",
+        "nameFullPy": "ZHANGJIAKOUSHI",
+        "shortNameFullPy": "ZHANGJIAKOU",
+        "municipality": false
+      },
+      {
+        "code": "1308",
+        "name": "承德市",
+        "shortName": "承德",
+        "nameCapitalPy": "CDS",
+        "shortNameCapitalPy": "CD",
+        "nameFullPy": "CHENGDESHI",
+        "shortNameFullPy": "CHENGDE",
+        "municipality": false
+      },
+      {
+        "code": "1309",
+        "name": "沧州市",
+        "shortName": "沧州",
+        "nameCapitalPy": "CZS",
+        "shortNameCapitalPy": "CZ",
+        "nameFullPy": "CANGZHOUSHI",
+        "shortNameFullPy": "CANGZHOU",
+        "municipality": false
+      },
+      {
+        "code": "1310",
+        "name": "廊坊市",
+        "shortName": "廊坊",
+        "nameCapitalPy": "LFS",
+        "shortNameCapitalPy": "LF",
+        "nameFullPy": "LANGFANGSHI",
+        "shortNameFullPy": "LANGFANG",
+        "municipality": false
+      },
+      {
+        "code": "1311",
+        "name": "衡水市",
+        "shortName": "衡水",
+        "nameCapitalPy": "HSS",
+        "shortNameCapitalPy": "HS",
+        "nameFullPy": "HENGSHUISHI",
+        "shortNameFullPy": "HENGSHUI",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "1400",
+    "name": "山西省",
+    "shortName": "山西",
+    "nameCapitalPy": "SXS",
+    "nameFullPy": "SHANXISHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "1401",
+        "name": "太原市",
+        "shortName": "太原",
+        "nameCapitalPy": "TYS",
+        "shortNameCapitalPy": "TY",
+        "nameFullPy": "TAIYUANSHI",
+        "shortNameFullPy": "TAIYUAN",
+        "municipality": false
+      },
+      {
+        "code": "1402",
+        "name": "大同市",
+        "shortName": "大同",
+        "nameCapitalPy": "DTS",
+        "shortNameCapitalPy": "DT",
+        "nameFullPy": "DATONGSHI",
+        "shortNameFullPy": "DATONG",
+        "municipality": false
+      },
+      {
+        "code": "1403",
+        "name": "阳泉市",
+        "shortName": "阳泉",
+        "nameCapitalPy": "YQS",
+        "shortNameCapitalPy": "YQ",
+        "nameFullPy": "YANGQUANSHI",
+        "shortNameFullPy": "YANGQUAN",
+        "municipality": false
+      },
+      {
+        "code": "1404",
+        "name": "长治市",
+        "shortName": "长治",
+        "nameCapitalPy": "ZZS",
+        "shortNameCapitalPy": "ZZ",
+        "nameFullPy": "ZHANGZHISHI",
+        "shortNameFullPy": "ZHANGZHI",
+        "municipality": false
+      },
+      {
+        "code": "1405",
+        "name": "晋城市",
+        "shortName": "晋城",
+        "nameCapitalPy": "JCS",
+        "shortNameCapitalPy": "JC",
+        "nameFullPy": "JINCHENGSHI",
+        "shortNameFullPy": "JINCHENG",
+        "municipality": false
+      },
+      {
+        "code": "1406",
+        "name": "朔州市",
+        "shortName": "朔州",
+        "nameCapitalPy": "SZS",
+        "shortNameCapitalPy": "SZ",
+        "nameFullPy": "SHUOZHOUSHI",
+        "shortNameFullPy": "SHUOZHOU",
+        "municipality": false
+      },
+      {
+        "code": "1407",
+        "name": "晋中市",
+        "shortName": "晋中",
+        "nameCapitalPy": "JZS",
+        "shortNameCapitalPy": "JZ",
+        "nameFullPy": "JINZHONGSHI",
+        "shortNameFullPy": "JINZHONG",
+        "municipality": false
+      },
+      {
+        "code": "1408",
+        "name": "运城市",
+        "shortName": "运城",
+        "nameCapitalPy": "YCS",
+        "shortNameCapitalPy": "YC",
+        "nameFullPy": "YUNCHENGSHI",
+        "shortNameFullPy": "YUNCHENG",
+        "municipality": false
+      },
+      {
+        "code": "1409",
+        "name": "忻州市",
+        "shortName": "忻州",
+        "nameCapitalPy": "XZS",
+        "shortNameCapitalPy": "XZ",
+        "nameFullPy": "XINZHOUSHI",
+        "shortNameFullPy": "XINZHOU",
+        "municipality": false
+      },
+      {
+        "code": "1410",
+        "name": "临汾市",
+        "shortName": "临汾",
+        "nameCapitalPy": "LFS",
+        "shortNameCapitalPy": "LF",
+        "nameFullPy": "LINFENSHI",
+        "shortNameFullPy": "LINFEN",
+        "municipality": false
+      },
+      {
+        "code": "1411",
+        "name": "吕梁市",
+        "shortName": "吕梁",
+        "nameCapitalPy": "LLS",
+        "shortNameCapitalPy": "LL",
+        "nameFullPy": "LU:LIANGSHI",
+        "shortNameFullPy": "LU:LIANG",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "1500",
+    "name": "内蒙古自治区",
+    "shortName": "内蒙古",
+    "nameCapitalPy": "NMGZZQ",
+    "nameFullPy": "NEIMENGGUZIZHIQU",
+    "municipality": false,
+    "children": [
+      {
+        "code": "1501",
+        "name": "呼和浩特市",
+        "shortName": "呼和浩特",
+        "nameCapitalPy": "HHHTS",
+        "shortNameCapitalPy": "HHHT",
+        "nameFullPy": "HUHEHAOTESHI",
+        "shortNameFullPy": "HUHEHAOTE",
+        "municipality": false
+      },
+      {
+        "code": "1502",
+        "name": "包头市",
+        "shortName": "包头",
+        "nameCapitalPy": "BTS",
+        "shortNameCapitalPy": "BT",
+        "nameFullPy": "BAOTOUSHI",
+        "shortNameFullPy": "BAOTOU",
+        "municipality": false
+      },
+      {
+        "code": "1503",
+        "name": "乌海市",
+        "shortName": "乌海",
+        "nameCapitalPy": "WHS",
+        "shortNameCapitalPy": "WH",
+        "nameFullPy": "WUHAISHI",
+        "shortNameFullPy": "WUHAI",
+        "municipality": false
+      },
+      {
+        "code": "1504",
+        "name": "赤峰市",
+        "shortName": "赤峰",
+        "nameCapitalPy": "CFS",
+        "shortNameCapitalPy": "CF",
+        "nameFullPy": "CHIFENGSHI",
+        "shortNameFullPy": "CHIFENG",
+        "municipality": false
+      },
+      {
+        "code": "1505",
+        "name": "通辽市",
+        "shortName": "通辽",
+        "nameCapitalPy": "TLS",
+        "shortNameCapitalPy": "TL",
+        "nameFullPy": "TONGLIAOSHI",
+        "shortNameFullPy": "TONGLIAO",
+        "municipality": false
+      },
+      {
+        "code": "1506",
+        "name": "鄂尔多斯市",
+        "shortName": "鄂尔多斯",
+        "nameCapitalPy": "EEDSS",
+        "shortNameCapitalPy": "EEDS",
+        "nameFullPy": "EERDUOSISHI",
+        "shortNameFullPy": "EERDUOSI",
+        "municipality": false
+      },
+      {
+        "code": "1507",
+        "name": "呼伦贝尔市",
+        "shortName": "呼伦贝尔",
+        "nameCapitalPy": "HLBES",
+        "shortNameCapitalPy": "HLBE",
+        "nameFullPy": "HULUNBEIERSHI",
+        "shortNameFullPy": "HULUNBEIER",
+        "municipality": false
+      },
+      {
+        "code": "1508",
+        "name": "巴彦淖尔市",
+        "shortName": "巴彦淖尔",
+        "nameCapitalPy": "BYNES",
+        "shortNameCapitalPy": "BYNE",
+        "nameFullPy": "BAYANNAOERSHI",
+        "shortNameFullPy": "BAYANNAOER",
+        "municipality": false
+      },
+      {
+        "code": "1509",
+        "name": "乌兰察布市",
+        "shortName": "乌兰察布",
+        "nameCapitalPy": "WLCBS",
+        "shortNameCapitalPy": "WLCB",
+        "nameFullPy": "WULANCHABUSHI",
+        "shortNameFullPy": "WULANCHABU",
+        "municipality": false
+      },
+      {
+        "code": "1522",
+        "name": "兴安盟",
+        "shortName": "兴安盟",
+        "nameCapitalPy": "XAM",
+        "shortNameCapitalPy": "XAM",
+        "nameFullPy": "XINGANMENG",
+        "shortNameFullPy": "XINGANMENG",
+        "municipality": false
+      },
+      {
+        "code": "1525",
+        "name": "锡林郭勒盟",
+        "shortName": "锡林郭勒盟",
+        "nameCapitalPy": "XLGLM",
+        "shortNameCapitalPy": "XLGLM",
+        "nameFullPy": "XILINGUOLEMENG",
+        "shortNameFullPy": "XILINGUOLEMENG",
+        "municipality": false
+      },
+      {
+        "code": "1529",
+        "name": "阿拉善盟",
+        "shortName": "阿拉善盟",
+        "nameCapitalPy": "ALSM",
+        "shortNameCapitalPy": "ALSM",
+        "nameFullPy": "ALASHANMENG",
+        "shortNameFullPy": "ALASHANMENG",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "2100",
+    "name": "辽宁省",
+    "shortName": "辽宁",
+    "nameCapitalPy": "LNS",
+    "nameFullPy": "LIAONINGSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "2101",
+        "name": "沈阳市",
+        "shortName": "沈阳",
+        "nameCapitalPy": "SYS",
+        "shortNameCapitalPy": "SY",
+        "nameFullPy": "SHENYANGSHI",
+        "shortNameFullPy": "SHENYANG",
+        "municipality": false
+      },
+      {
+        "code": "2102",
+        "name": "大连市",
+        "shortName": "大连",
+        "nameCapitalPy": "DLS",
+        "shortNameCapitalPy": "DL",
+        "nameFullPy": "DALIANSHI",
+        "shortNameFullPy": "DALIAN",
+        "municipality": false
+      },
+      {
+        "code": "2103",
+        "name": "鞍山市",
+        "shortName": "鞍山",
+        "nameCapitalPy": "ASS",
+        "shortNameCapitalPy": "AS",
+        "nameFullPy": "ANSHANSHI",
+        "shortNameFullPy": "ANSHAN",
+        "municipality": false
+      },
+      {
+        "code": "2104",
+        "name": "抚顺市",
+        "shortName": "抚顺",
+        "nameCapitalPy": "FSS",
+        "shortNameCapitalPy": "FS",
+        "nameFullPy": "FUSHUNSHI",
+        "shortNameFullPy": "FUSHUN",
+        "municipality": false
+      },
+      {
+        "code": "2105",
+        "name": "本溪市",
+        "shortName": "本溪",
+        "nameCapitalPy": "BXS",
+        "shortNameCapitalPy": "BX",
+        "nameFullPy": "BENXISHI",
+        "shortNameFullPy": "BENXI",
+        "municipality": false
+      },
+      {
+        "code": "2106",
+        "name": "丹东市",
+        "shortName": "丹东",
+        "nameCapitalPy": "DDS",
+        "shortNameCapitalPy": "DD",
+        "nameFullPy": "DANDONGSHI",
+        "shortNameFullPy": "DANDONG",
+        "municipality": false
+      },
+      {
+        "code": "2107",
+        "name": "锦州市",
+        "shortName": "锦州",
+        "nameCapitalPy": "JZS",
+        "shortNameCapitalPy": "JZ",
+        "nameFullPy": "JINZHOUSHI",
+        "shortNameFullPy": "JINZHOU",
+        "municipality": false
+      },
+      {
+        "code": "2108",
+        "name": "营口市",
+        "shortName": "营口",
+        "nameCapitalPy": "YKS",
+        "shortNameCapitalPy": "YK",
+        "nameFullPy": "YINGKOUSHI",
+        "shortNameFullPy": "YINGKOU",
+        "municipality": false
+      },
+      {
+        "code": "2109",
+        "name": "阜新市",
+        "shortName": "阜新",
+        "nameCapitalPy": "FXS",
+        "shortNameCapitalPy": "FX",
+        "nameFullPy": "FUXINSHI",
+        "shortNameFullPy": "FUXIN",
+        "municipality": false
+      },
+      {
+        "code": "2110",
+        "name": "辽阳市",
+        "shortName": "辽阳",
+        "nameCapitalPy": "LYS",
+        "shortNameCapitalPy": "LY",
+        "nameFullPy": "LIAOYANGSHI",
+        "shortNameFullPy": "LIAOYANG",
+        "municipality": false
+      },
+      {
+        "code": "2111",
+        "name": "盘锦市",
+        "shortName": "盘锦",
+        "nameCapitalPy": "PJS",
+        "shortNameCapitalPy": "PJ",
+        "nameFullPy": "PANJINSHI",
+        "shortNameFullPy": "PANJIN",
+        "municipality": false
+      },
+      {
+        "code": "2112",
+        "name": "铁岭市",
+        "shortName": "铁岭",
+        "nameCapitalPy": "TLS",
+        "shortNameCapitalPy": "TL",
+        "nameFullPy": "TIELINGSHI",
+        "shortNameFullPy": "TIELING",
+        "municipality": false
+      },
+      {
+        "code": "2113",
+        "name": "朝阳市",
+        "shortName": "朝阳",
+        "nameCapitalPy": "CYS",
+        "shortNameCapitalPy": "CY",
+        "nameFullPy": "CHAOYANGSHI",
+        "shortNameFullPy": "CHAOYANG",
+        "municipality": false
+      },
+      {
+        "code": "2114",
+        "name": "葫芦岛市",
+        "shortName": "葫芦岛",
+        "nameCapitalPy": "HLDS",
+        "shortNameCapitalPy": "HLD",
+        "nameFullPy": "HULUDAOSHI",
+        "shortNameFullPy": "HULUDAO",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "2200",
+    "name": "吉林省",
+    "shortName": "吉林",
+    "nameCapitalPy": "JLS",
+    "nameFullPy": "JILINSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "2201",
+        "name": "长春市",
+        "shortName": "长春",
+        "nameCapitalPy": "ZCS",
+        "shortNameCapitalPy": "ZC",
+        "nameFullPy": "ZHANGCHUNSHI",
+        "shortNameFullPy": "ZHANGCHUN",
+        "municipality": false
+      },
+      {
+        "code": "2202",
+        "name": "吉林市",
+        "shortName": "吉林",
+        "nameCapitalPy": "JLS",
+        "shortNameCapitalPy": "JL",
+        "nameFullPy": "JILINSHI",
+        "shortNameFullPy": "JILIN",
+        "municipality": false
+      },
+      {
+        "code": "2203",
+        "name": "四平市",
+        "shortName": "四平",
+        "nameCapitalPy": "SPS",
+        "shortNameCapitalPy": "SP",
+        "nameFullPy": "SIPINGSHI",
+        "shortNameFullPy": "SIPING",
+        "municipality": false
+      },
+      {
+        "code": "2204",
+        "name": "辽源市",
+        "shortName": "辽源",
+        "nameCapitalPy": "LYS",
+        "shortNameCapitalPy": "LY",
+        "nameFullPy": "LIAOYUANSHI",
+        "shortNameFullPy": "LIAOYUAN",
+        "municipality": false
+      },
+      {
+        "code": "2205",
+        "name": "通化市",
+        "shortName": "通化",
+        "nameCapitalPy": "THS",
+        "shortNameCapitalPy": "TH",
+        "nameFullPy": "TONGHUASHI",
+        "shortNameFullPy": "TONGHUA",
+        "municipality": false
+      },
+      {
+        "code": "2206",
+        "name": "白山市",
+        "shortName": "白山",
+        "nameCapitalPy": "BSS",
+        "shortNameCapitalPy": "BS",
+        "nameFullPy": "BAISHANSHI",
+        "shortNameFullPy": "BAISHAN",
+        "municipality": false
+      },
+      {
+        "code": "2207",
+        "name": "松原市",
+        "shortName": "松原",
+        "nameCapitalPy": "SYS",
+        "shortNameCapitalPy": "SY",
+        "nameFullPy": "SONGYUANSHI",
+        "shortNameFullPy": "SONGYUAN",
+        "municipality": false
+      },
+      {
+        "code": "2208",
+        "name": "白城市",
+        "shortName": "白城",
+        "nameCapitalPy": "BCS",
+        "shortNameCapitalPy": "BC",
+        "nameFullPy": "BAICHENGSHI",
+        "shortNameFullPy": "BAICHENG",
+        "municipality": false
+      },
+      {
+        "code": "2224",
+        "name": "延边朝鲜族自治州",
+        "shortName": "延边",
+        "nameCapitalPy": "YBCXZZZZ",
+        "shortNameCapitalPy": "YB",
+        "nameFullPy": "YANBIANCHAOXIANZUZIZHIZHOU",
+        "shortNameFullPy": "YANBIAN",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "2300",
+    "name": "黑龙江省",
+    "shortName": "黑龙江",
+    "nameCapitalPy": "HLJS",
+    "nameFullPy": "HEILONGJIANGSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "2301",
+        "name": "哈尔滨市",
+        "shortName": "哈尔滨",
+        "nameCapitalPy": "HEBS",
+        "shortNameCapitalPy": "HEB",
+        "nameFullPy": "HAERBINSHI",
+        "shortNameFullPy": "HAERBIN",
+        "municipality": false
+      },
+      {
+        "code": "2302",
+        "name": "齐齐哈尔市",
+        "shortName": "齐齐哈尔",
+        "nameCapitalPy": "QQHES",
+        "shortNameCapitalPy": "QQHE",
+        "nameFullPy": "QIQIHAERSHI",
+        "shortNameFullPy": "QIQIHAER",
+        "municipality": false
+      },
+      {
+        "code": "2303",
+        "name": "鸡西市",
+        "shortName": "鸡西",
+        "nameCapitalPy": "JXS",
+        "shortNameCapitalPy": "JX",
+        "nameFullPy": "JIXISHI",
+        "shortNameFullPy": "JIXI",
+        "municipality": false
+      },
+      {
+        "code": "2304",
+        "name": "鹤岗市",
+        "shortName": "鹤岗",
+        "nameCapitalPy": "HGS",
+        "shortNameCapitalPy": "HG",
+        "nameFullPy": "HEGANGSHI",
+        "shortNameFullPy": "HEGANG",
+        "municipality": false
+      },
+      {
+        "code": "2305",
+        "name": "双鸭山市",
+        "shortName": "双鸭山",
+        "nameCapitalPy": "SYSS",
+        "shortNameCapitalPy": "SYS",
+        "nameFullPy": "SHUANGYASHANSHI",
+        "shortNameFullPy": "SHUANGYASHAN",
+        "municipality": false
+      },
+      {
+        "code": "2306",
+        "name": "大庆市",
+        "shortName": "大庆",
+        "nameCapitalPy": "DQS",
+        "shortNameCapitalPy": "DQ",
+        "nameFullPy": "DAQINGSHI",
+        "shortNameFullPy": "DAQING",
+        "municipality": false
+      },
+      {
+        "code": "2307",
+        "name": "伊春市",
+        "shortName": "伊春",
+        "nameCapitalPy": "YCS",
+        "shortNameCapitalPy": "YC",
+        "nameFullPy": "YICHUNSHI",
+        "shortNameFullPy": "YICHUN",
+        "municipality": false
+      },
+      {
+        "code": "2308",
+        "name": "佳木斯市",
+        "shortName": "佳木斯",
+        "nameCapitalPy": "JMSS",
+        "shortNameCapitalPy": "JMS",
+        "nameFullPy": "JIAMUSISHI",
+        "shortNameFullPy": "JIAMUSI",
+        "municipality": false
+      },
+      {
+        "code": "2309",
+        "name": "七台河市",
+        "shortName": "七台河",
+        "nameCapitalPy": "QTHS",
+        "shortNameCapitalPy": "QTH",
+        "nameFullPy": "QITAIHESHI",
+        "shortNameFullPy": "QITAIHE",
+        "municipality": false
+      },
+      {
+        "code": "2310",
+        "name": "牡丹江市",
+        "shortName": "牡丹江",
+        "nameCapitalPy": "MDJS",
+        "shortNameCapitalPy": "MDJ",
+        "nameFullPy": "MUDANJIANGSHI",
+        "shortNameFullPy": "MUDANJIANG",
+        "municipality": false
+      },
+      {
+        "code": "2311",
+        "name": "黑河市",
+        "shortName": "黑河",
+        "nameCapitalPy": "HHS",
+        "shortNameCapitalPy": "HH",
+        "nameFullPy": "HEIHESHI",
+        "shortNameFullPy": "HEIHE",
+        "municipality": false
+      },
+      {
+        "code": "2312",
+        "name": "绥化市",
+        "shortName": "绥化",
+        "nameCapitalPy": "SHS",
+        "shortNameCapitalPy": "SH",
+        "nameFullPy": "SUIHUASHI",
+        "shortNameFullPy": "SUIHUA",
+        "municipality": false
+      },
+      {
+        "code": "2327",
+        "name": "大兴安岭地区",
+        "shortName": "大兴安岭",
+        "nameCapitalPy": "DXALDQ",
+        "shortNameCapitalPy": "DXAL",
+        "nameFullPy": "DAXINGANLINGDIQU",
+        "shortNameFullPy": "DAXINGANLING",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "3200",
+    "name": "江苏省",
+    "shortName": "江苏",
+    "nameCapitalPy": "JSS",
+    "nameFullPy": "JIANGSUSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "3201",
+        "name": "南京市",
+        "shortName": "南京",
+        "nameCapitalPy": "NJS",
+        "shortNameCapitalPy": "NJ",
+        "nameFullPy": "NANJINGSHI",
+        "shortNameFullPy": "NANJING",
+        "municipality": false
+      },
+      {
+        "code": "3202",
+        "name": "无锡市",
+        "shortName": "无锡",
+        "nameCapitalPy": "WXS",
+        "shortNameCapitalPy": "WX",
+        "nameFullPy": "WUXISHI",
+        "shortNameFullPy": "WUXI",
+        "municipality": false
+      },
+      {
+        "code": "3203",
+        "name": "徐州市",
+        "shortName": "徐州",
+        "nameCapitalPy": "XZS",
+        "shortNameCapitalPy": "XZ",
+        "nameFullPy": "XUZHOUSHI",
+        "shortNameFullPy": "XUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3204",
+        "name": "常州市",
+        "shortName": "常州",
+        "nameCapitalPy": "CZS",
+        "shortNameCapitalPy": "CZ",
+        "nameFullPy": "CHANGZHOUSHI",
+        "shortNameFullPy": "CHANGZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3205",
+        "name": "苏州市",
+        "shortName": "苏州",
+        "nameCapitalPy": "SZS",
+        "shortNameCapitalPy": "SZ",
+        "nameFullPy": "SUZHOUSHI",
+        "shortNameFullPy": "SUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3206",
+        "name": "南通市",
+        "shortName": "南通",
+        "nameCapitalPy": "NTS",
+        "shortNameCapitalPy": "NT",
+        "nameFullPy": "NANTONGSHI",
+        "shortNameFullPy": "NANTONG",
+        "municipality": false
+      },
+      {
+        "code": "3207",
+        "name": "连云港市",
+        "shortName": "连云港",
+        "nameCapitalPy": "LYGS",
+        "shortNameCapitalPy": "LYG",
+        "nameFullPy": "LIANYUNGANGSHI",
+        "shortNameFullPy": "LIANYUNGANG",
+        "municipality": false
+      },
+      {
+        "code": "3208",
+        "name": "淮安市",
+        "shortName": "淮安",
+        "nameCapitalPy": "HAS",
+        "shortNameCapitalPy": "HA",
+        "nameFullPy": "HUAIANSHI",
+        "shortNameFullPy": "HUAIAN",
+        "municipality": false
+      },
+      {
+        "code": "3209",
+        "name": "盐城市",
+        "shortName": "盐城",
+        "nameCapitalPy": "YCS",
+        "shortNameCapitalPy": "YC",
+        "nameFullPy": "YANCHENGSHI",
+        "shortNameFullPy": "YANCHENG",
+        "municipality": false
+      },
+      {
+        "code": "3210",
+        "name": "扬州市",
+        "shortName": "扬州",
+        "nameCapitalPy": "YZS",
+        "shortNameCapitalPy": "YZ",
+        "nameFullPy": "YANGZHOUSHI",
+        "shortNameFullPy": "YANGZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3211",
+        "name": "镇江市",
+        "shortName": "镇江",
+        "nameCapitalPy": "ZJS",
+        "shortNameCapitalPy": "ZJ",
+        "nameFullPy": "ZHENJIANGSHI",
+        "shortNameFullPy": "ZHENJIANG",
+        "municipality": false
+      },
+      {
+        "code": "3212",
+        "name": "泰州市",
+        "shortName": "泰州",
+        "nameCapitalPy": "TZS",
+        "shortNameCapitalPy": "TZ",
+        "nameFullPy": "TAIZHOUSHI",
+        "shortNameFullPy": "TAIZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3213",
+        "name": "宿迁市",
+        "shortName": "宿迁",
+        "nameCapitalPy": "SQS",
+        "shortNameCapitalPy": "SQ",
+        "nameFullPy": "SUQIANSHI",
+        "shortNameFullPy": "SUQIAN",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "3300",
+    "name": "浙江省",
+    "shortName": "浙江",
+    "nameCapitalPy": "ZJS",
+    "nameFullPy": "ZHEJIANGSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "3301",
+        "name": "杭州市",
+        "shortName": "杭州",
+        "nameCapitalPy": "HZS",
+        "shortNameCapitalPy": "HZ",
+        "nameFullPy": "HANGZHOUSHI",
+        "shortNameFullPy": "HANGZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3302",
+        "name": "宁波市",
+        "shortName": "宁波",
+        "nameCapitalPy": "NBS",
+        "shortNameCapitalPy": "NB",
+        "nameFullPy": "NINGBOSHI",
+        "shortNameFullPy": "NINGBO",
+        "municipality": false
+      },
+      {
+        "code": "3303",
+        "name": "温州市",
+        "shortName": "温州",
+        "nameCapitalPy": "WZS",
+        "shortNameCapitalPy": "WZ",
+        "nameFullPy": "WENZHOUSHI",
+        "shortNameFullPy": "WENZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3304",
+        "name": "嘉兴市",
+        "shortName": "嘉兴",
+        "nameCapitalPy": "JXS",
+        "shortNameCapitalPy": "JX",
+        "nameFullPy": "JIAXINGSHI",
+        "shortNameFullPy": "JIAXING",
+        "municipality": false
+      },
+      {
+        "code": "3305",
+        "name": "湖州市",
+        "shortName": "湖州",
+        "nameCapitalPy": "HZS",
+        "shortNameCapitalPy": "HZ",
+        "nameFullPy": "HUZHOUSHI",
+        "shortNameFullPy": "HUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3306",
+        "name": "绍兴市",
+        "shortName": "绍兴",
+        "nameCapitalPy": "SXS",
+        "shortNameCapitalPy": "SX",
+        "nameFullPy": "SHAOXINGSHI",
+        "shortNameFullPy": "SHAOXING",
+        "municipality": false
+      },
+      {
+        "code": "3307",
+        "name": "金华市",
+        "shortName": "金华",
+        "nameCapitalPy": "JHS",
+        "shortNameCapitalPy": "JH",
+        "nameFullPy": "JINHUASHI",
+        "shortNameFullPy": "JINHUA",
+        "municipality": false
+      },
+      {
+        "code": "3308",
+        "name": "衢州市",
+        "shortName": "衢州",
+        "nameCapitalPy": "QZS",
+        "shortNameCapitalPy": "QZ",
+        "nameFullPy": "QUZHOUSHI",
+        "shortNameFullPy": "QUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3309",
+        "name": "舟山市",
+        "shortName": "舟山",
+        "nameCapitalPy": "ZSS",
+        "shortNameCapitalPy": "ZS",
+        "nameFullPy": "ZHOUSHANSHI",
+        "shortNameFullPy": "ZHOUSHAN",
+        "municipality": false
+      },
+      {
+        "code": "3310",
+        "name": "台州市",
+        "shortName": "台州",
+        "nameCapitalPy": "TZS",
+        "shortNameCapitalPy": "TZ",
+        "nameFullPy": "TAIZHOUSHI",
+        "shortNameFullPy": "TAIZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3311",
+        "name": "丽水市",
+        "shortName": "丽水",
+        "nameCapitalPy": "LSS",
+        "shortNameCapitalPy": "LS",
+        "nameFullPy": "LISHUISHI",
+        "shortNameFullPy": "LISHUI",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "3400",
+    "name": "安徽省",
+    "shortName": "安徽",
+    "nameCapitalPy": "AHS",
+    "nameFullPy": "ANHUISHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "3401",
+        "name": "合肥市",
+        "shortName": "合肥",
+        "nameCapitalPy": "HFS",
+        "shortNameCapitalPy": "HF",
+        "nameFullPy": "HEFEISHI",
+        "shortNameFullPy": "HEFEI",
+        "municipality": false
+      },
+      {
+        "code": "3402",
+        "name": "芜湖市",
+        "shortName": "芜湖",
+        "nameCapitalPy": "WHS",
+        "shortNameCapitalPy": "WH",
+        "nameFullPy": "WUHUSHI",
+        "shortNameFullPy": "WUHU",
+        "municipality": false
+      },
+      {
+        "code": "3403",
+        "name": "蚌埠市",
+        "shortName": "蚌埠",
+        "nameCapitalPy": "BBS",
+        "shortNameCapitalPy": "BB",
+        "nameFullPy": "BANGBUSHI",
+        "shortNameFullPy": "BANGBU",
+        "municipality": false
+      },
+      {
+        "code": "3404",
+        "name": "淮南市",
+        "shortName": "淮南",
+        "nameCapitalPy": "HNS",
+        "shortNameCapitalPy": "HN",
+        "nameFullPy": "HUAINANSHI",
+        "shortNameFullPy": "HUAINAN",
+        "municipality": false
+      },
+      {
+        "code": "3405",
+        "name": "马鞍山市",
+        "shortName": "马鞍山",
+        "nameCapitalPy": "MASS",
+        "shortNameCapitalPy": "MAS",
+        "nameFullPy": "MAANSHANSHI",
+        "shortNameFullPy": "MAANSHAN",
+        "municipality": false
+      },
+      {
+        "code": "3406",
+        "name": "淮北市",
+        "shortName": "淮北",
+        "nameCapitalPy": "HBS",
+        "shortNameCapitalPy": "HB",
+        "nameFullPy": "HUAIBEISHI",
+        "shortNameFullPy": "HUAIBEI",
+        "municipality": false
+      },
+      {
+        "code": "3407",
+        "name": "铜陵市",
+        "shortName": "铜陵",
+        "nameCapitalPy": "TLS",
+        "shortNameCapitalPy": "TL",
+        "nameFullPy": "TONGLINGSHI",
+        "shortNameFullPy": "TONGLING",
+        "municipality": false
+      },
+      {
+        "code": "3408",
+        "name": "安庆市",
+        "shortName": "安庆",
+        "nameCapitalPy": "AQS",
+        "shortNameCapitalPy": "AQ",
+        "nameFullPy": "ANQINGSHI",
+        "shortNameFullPy": "ANQING",
+        "municipality": false
+      },
+      {
+        "code": "3410",
+        "name": "黄山市",
+        "shortName": "黄山",
+        "nameCapitalPy": "HSS",
+        "shortNameCapitalPy": "HS",
+        "nameFullPy": "HUANGSHANSHI",
+        "shortNameFullPy": "HUANGSHAN",
+        "municipality": false
+      },
+      {
+        "code": "3411",
+        "name": "滁州市",
+        "shortName": "滁州",
+        "nameCapitalPy": "CZS",
+        "shortNameCapitalPy": "CZ",
+        "nameFullPy": "CHUZHOUSHI",
+        "shortNameFullPy": "CHUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3412",
+        "name": "阜阳市",
+        "shortName": "阜阳",
+        "nameCapitalPy": "FYS",
+        "shortNameCapitalPy": "FY",
+        "nameFullPy": "FUYANGSHI",
+        "shortNameFullPy": "FUYANG",
+        "municipality": false
+      },
+      {
+        "code": "3413",
+        "name": "宿州市",
+        "shortName": "宿州",
+        "nameCapitalPy": "SZS",
+        "shortNameCapitalPy": "SZ",
+        "nameFullPy": "SUZHOUSHI",
+        "shortNameFullPy": "SUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3415",
+        "name": "六安市",
+        "shortName": "六安",
+        "nameCapitalPy": "LAS",
+        "shortNameCapitalPy": "LA",
+        "nameFullPy": "LIUANSHI",
+        "shortNameFullPy": "LIUAN",
+        "municipality": false
+      },
+      {
+        "code": "3416",
+        "name": "亳州市",
+        "shortName": "亳州",
+        "nameCapitalPy": "BZS",
+        "shortNameCapitalPy": "BZ",
+        "nameFullPy": "BOZHOUSHI",
+        "shortNameFullPy": "BOZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3417",
+        "name": "池州市",
+        "shortName": "池州",
+        "nameCapitalPy": "CZS",
+        "shortNameCapitalPy": "CZ",
+        "nameFullPy": "CHIZHOUSHI",
+        "shortNameFullPy": "CHIZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3418",
+        "name": "宣城市",
+        "shortName": "宜城",
+        "nameCapitalPy": "XCS",
+        "shortNameCapitalPy": "YC",
+        "nameFullPy": "XUANCHENGSHI",
+        "shortNameFullPy": "YICHENG",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "3500",
+    "name": "福建省",
+    "shortName": "福建",
+    "nameCapitalPy": "FJS",
+    "nameFullPy": "FUJIANSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "3501",
+        "name": "福州市",
+        "shortName": "福州",
+        "nameCapitalPy": "FZS",
+        "shortNameCapitalPy": "FZ",
+        "nameFullPy": "FUZHOUSHI",
+        "shortNameFullPy": "FUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3502",
+        "name": "厦门市",
+        "shortName": "厦门",
+        "nameCapitalPy": "SMS",
+        "shortNameCapitalPy": "SM",
+        "nameFullPy": "XIAMENSHI",
+        "shortNameFullPy": "XIAMEN",
+        "municipality": false
+      },
+      {
+        "code": "3503",
+        "name": "莆田市",
+        "shortName": "莆田",
+        "nameCapitalPy": "PTS",
+        "shortNameCapitalPy": "PT",
+        "nameFullPy": "PUTIANSHI",
+        "shortNameFullPy": "PUTIAN",
+        "municipality": false
+      },
+      {
+        "code": "3504",
+        "name": "三明市",
+        "shortName": "三明",
+        "nameCapitalPy": "SMS",
+        "shortNameCapitalPy": "SM",
+        "nameFullPy": "SANMINGSHI",
+        "shortNameFullPy": "SANMING",
+        "municipality": false
+      },
+      {
+        "code": "3505",
+        "name": "泉州市",
+        "shortName": "泉州",
+        "nameCapitalPy": "QZS",
+        "shortNameCapitalPy": "QZ",
+        "nameFullPy": "QUANZHOUSHI",
+        "shortNameFullPy": "QUANZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3506",
+        "name": "漳州市",
+        "shortName": "漳州",
+        "nameCapitalPy": "ZZS",
+        "shortNameCapitalPy": "ZZ",
+        "nameFullPy": "ZHANGZHOUSHI",
+        "shortNameFullPy": "ZHANGZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3507",
+        "name": "南平市",
+        "shortName": "南平",
+        "nameCapitalPy": "NPS",
+        "shortNameCapitalPy": "NP",
+        "nameFullPy": "NANPINGSHI",
+        "shortNameFullPy": "NANPING",
+        "municipality": false
+      },
+      {
+        "code": "3508",
+        "name": "龙岩市",
+        "shortName": "龙岩",
+        "nameCapitalPy": "LYS",
+        "shortNameCapitalPy": "LY",
+        "nameFullPy": "LONGYANSHI",
+        "shortNameFullPy": "LONGYAN",
+        "municipality": false
+      },
+      {
+        "code": "3509",
+        "name": "宁德市",
+        "shortName": "宁德",
+        "nameCapitalPy": "NDS",
+        "shortNameCapitalPy": "ND",
+        "nameFullPy": "NINGDESHI",
+        "shortNameFullPy": "NINGDE",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "3600",
+    "name": "江西省",
+    "shortName": "江西",
+    "nameCapitalPy": "JXS",
+    "nameFullPy": "JIANGXISHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "3601",
+        "name": "南昌市",
+        "shortName": "南昌",
+        "nameCapitalPy": "NCS",
+        "shortNameCapitalPy": "NC",
+        "nameFullPy": "NANCHANGSHI",
+        "shortNameFullPy": "NANCHANG",
+        "municipality": false
+      },
+      {
+        "code": "3602",
+        "name": "景德镇市",
+        "shortName": "景德镇",
+        "nameCapitalPy": "JDZS",
+        "shortNameCapitalPy": "JDZ",
+        "nameFullPy": "JINGDEZHENSHI",
+        "shortNameFullPy": "JINGDEZHEN",
+        "municipality": false
+      },
+      {
+        "code": "3603",
+        "name": "萍乡市",
+        "shortName": "萍乡",
+        "nameCapitalPy": "PXS",
+        "shortNameCapitalPy": "PX",
+        "nameFullPy": "PINGXIANGSHI",
+        "shortNameFullPy": "PINGXIANG",
+        "municipality": false
+      },
+      {
+        "code": "3604",
+        "name": "九江市",
+        "shortName": "九江",
+        "nameCapitalPy": "JJS",
+        "shortNameCapitalPy": "JJ",
+        "nameFullPy": "JIUJIANGSHI",
+        "shortNameFullPy": "JIUJIANG",
+        "municipality": false
+      },
+      {
+        "code": "3605",
+        "name": "新余市",
+        "shortName": "新余",
+        "nameCapitalPy": "XYS",
+        "shortNameCapitalPy": "XY",
+        "nameFullPy": "XINYUSHI",
+        "shortNameFullPy": "XINYU",
+        "municipality": false
+      },
+      {
+        "code": "3606",
+        "name": "鹰潭市",
+        "shortName": "鹰潭",
+        "nameCapitalPy": "YTS",
+        "shortNameCapitalPy": "YT",
+        "nameFullPy": "YINGTANSHI",
+        "shortNameFullPy": "YINGTAN",
+        "municipality": false
+      },
+      {
+        "code": "3607",
+        "name": "赣州市",
+        "shortName": "赣州",
+        "nameCapitalPy": "GZS",
+        "shortNameCapitalPy": "GZ",
+        "nameFullPy": "GANZHOUSHI",
+        "shortNameFullPy": "GANZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3608",
+        "name": "吉安市",
+        "shortName": "吉安",
+        "nameCapitalPy": "JAS",
+        "shortNameCapitalPy": "JA",
+        "nameFullPy": "JIANSHI",
+        "shortNameFullPy": "JIAN",
+        "municipality": false
+      },
+      {
+        "code": "3609",
+        "name": "宜春市",
+        "shortName": "宜春",
+        "nameCapitalPy": "YCS",
+        "shortNameCapitalPy": "YC",
+        "nameFullPy": "YICHUNSHI",
+        "shortNameFullPy": "YICHUN",
+        "municipality": false
+      },
+      {
+        "code": "3610",
+        "name": "抚州市",
+        "shortName": "抚州",
+        "nameCapitalPy": "FZS",
+        "shortNameCapitalPy": "FZ",
+        "nameFullPy": "FUZHOUSHI",
+        "shortNameFullPy": "FUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3611",
+        "name": "上饶市",
+        "shortName": "上饶",
+        "nameCapitalPy": "SRS",
+        "shortNameCapitalPy": "SR",
+        "nameFullPy": "SHANGRAOSHI",
+        "shortNameFullPy": "SHANGRAO",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "3700",
+    "name": "山东省",
+    "shortName": "山东",
+    "nameCapitalPy": "SDS",
+    "nameFullPy": "SHANDONGSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "3701",
+        "name": "济南市",
+        "shortName": "济南",
+        "nameCapitalPy": "JNS",
+        "shortNameCapitalPy": "JN",
+        "nameFullPy": "JINANSHI",
+        "shortNameFullPy": "JINAN",
+        "municipality": false
+      },
+      {
+        "code": "3702",
+        "name": "青岛市",
+        "shortName": "青岛",
+        "nameCapitalPy": "QDS",
+        "shortNameCapitalPy": "QD",
+        "nameFullPy": "QINGDAOSHI",
+        "shortNameFullPy": "QINGDAO",
+        "municipality": false
+      },
+      {
+        "code": "3703",
+        "name": "淄博市",
+        "shortName": "淄博",
+        "nameCapitalPy": "ZBS",
+        "shortNameCapitalPy": "ZB",
+        "nameFullPy": "ZIBOSHI",
+        "shortNameFullPy": "ZIBO",
+        "municipality": false
+      },
+      {
+        "code": "3704",
+        "name": "枣庄市",
+        "shortName": "枣庄",
+        "nameCapitalPy": "ZZS",
+        "shortNameCapitalPy": "ZZ",
+        "nameFullPy": "ZAOZHUANGSHI",
+        "shortNameFullPy": "ZAOZHUANG",
+        "municipality": false
+      },
+      {
+        "code": "3705",
+        "name": "东营市",
+        "shortName": "东营",
+        "nameCapitalPy": "DYS",
+        "shortNameCapitalPy": "DY",
+        "nameFullPy": "DONGYINGSHI",
+        "shortNameFullPy": "DONGYING",
+        "municipality": false
+      },
+      {
+        "code": "3706",
+        "name": "烟台市",
+        "shortName": "烟台",
+        "nameCapitalPy": "YTS",
+        "shortNameCapitalPy": "YT",
+        "nameFullPy": "YANTAISHI",
+        "shortNameFullPy": "YANTAI",
+        "municipality": false
+      },
+      {
+        "code": "3707",
+        "name": "潍坊市",
+        "shortName": "潍坊",
+        "nameCapitalPy": "WFS",
+        "shortNameCapitalPy": "WF",
+        "nameFullPy": "WEIFANGSHI",
+        "shortNameFullPy": "WEIFANG",
+        "municipality": false
+      },
+      {
+        "code": "3708",
+        "name": "济宁市",
+        "shortName": "济宁",
+        "nameCapitalPy": "JNS",
+        "shortNameCapitalPy": "JN",
+        "nameFullPy": "JININGSHI",
+        "shortNameFullPy": "JINING",
+        "municipality": false
+      },
+      {
+        "code": "3709",
+        "name": "泰安市",
+        "shortName": "泰安",
+        "nameCapitalPy": "TAS",
+        "shortNameCapitalPy": "TA",
+        "nameFullPy": "TAIANSHI",
+        "shortNameFullPy": "TAIAN",
+        "municipality": false
+      },
+      {
+        "code": "3710",
+        "name": "威海市",
+        "shortName": "威海",
+        "nameCapitalPy": "WHS",
+        "shortNameCapitalPy": "WH",
+        "nameFullPy": "WEIHAISHI",
+        "shortNameFullPy": "WEIHAI",
+        "municipality": false
+      },
+      {
+        "code": "3711",
+        "name": "日照市",
+        "shortName": "日照",
+        "nameCapitalPy": "RZS",
+        "shortNameCapitalPy": "RZ",
+        "nameFullPy": "RIZHAOSHI",
+        "shortNameFullPy": "RIZHAO",
+        "municipality": false
+      },
+      {
+        "code": "3713",
+        "name": "临沂市",
+        "shortName": "临沂",
+        "nameCapitalPy": "LYS",
+        "shortNameCapitalPy": "LY",
+        "nameFullPy": "LINYISHI",
+        "shortNameFullPy": "LINYI",
+        "municipality": false
+      },
+      {
+        "code": "3714",
+        "name": "德州市",
+        "shortName": "德州",
+        "nameCapitalPy": "DZS",
+        "shortNameCapitalPy": "DZ",
+        "nameFullPy": "DEZHOUSHI",
+        "shortNameFullPy": "DEZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3715",
+        "name": "聊城市",
+        "shortName": "聊城",
+        "nameCapitalPy": "LCS",
+        "shortNameCapitalPy": "LC",
+        "nameFullPy": "LIAOCHENGSHI",
+        "shortNameFullPy": "LIAOCHENG",
+        "municipality": false
+      },
+      {
+        "code": "3716",
+        "name": "滨州市",
+        "shortName": "滨州",
+        "nameCapitalPy": "BZS",
+        "shortNameCapitalPy": "BZ",
+        "nameFullPy": "BINZHOUSHI",
+        "shortNameFullPy": "BINZHOU",
+        "municipality": false
+      },
+      {
+        "code": "3717",
+        "name": "菏泽市",
+        "shortName": "菏泽",
+        "nameCapitalPy": "HZS",
+        "shortNameCapitalPy": "HZ",
+        "nameFullPy": "HEZESHI",
+        "shortNameFullPy": "HEZE",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "4100",
+    "name": "河南省",
+    "shortName": "河南",
+    "nameCapitalPy": "HNS",
+    "nameFullPy": "HENANSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "4101",
+        "name": "郑州市",
+        "shortName": "郑州",
+        "nameCapitalPy": "ZZS",
+        "shortNameCapitalPy": "ZZ",
+        "nameFullPy": "ZHENGZHOUSHI",
+        "shortNameFullPy": "ZHENGZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4102",
+        "name": "开封市",
+        "shortName": "开封",
+        "nameCapitalPy": "KFS",
+        "shortNameCapitalPy": "KF",
+        "nameFullPy": "KAIFENGSHI",
+        "shortNameFullPy": "KAIFENG",
+        "municipality": false
+      },
+      {
+        "code": "4103",
+        "name": "洛阳市",
+        "shortName": "洛阳",
+        "nameCapitalPy": "LYS",
+        "shortNameCapitalPy": "LY",
+        "nameFullPy": "LUOYANGSHI",
+        "shortNameFullPy": "LUOYANG",
+        "municipality": false
+      },
+      {
+        "code": "4104",
+        "name": "平顶山市",
+        "shortName": "平顶山",
+        "nameCapitalPy": "PDSS",
+        "shortNameCapitalPy": "PDS",
+        "nameFullPy": "PINGDINGSHANSHI",
+        "shortNameFullPy": "PINGDINGSHAN",
+        "municipality": false
+      },
+      {
+        "code": "4105",
+        "name": "安阳市",
+        "shortName": "安阳",
+        "nameCapitalPy": "AYS",
+        "shortNameCapitalPy": "AY",
+        "nameFullPy": "ANYANGSHI",
+        "shortNameFullPy": "ANYANG",
+        "municipality": false
+      },
+      {
+        "code": "4106",
+        "name": "鹤壁市",
+        "shortName": "鹤壁",
+        "nameCapitalPy": "HBS",
+        "shortNameCapitalPy": "HB",
+        "nameFullPy": "HEBISHI",
+        "shortNameFullPy": "HEBI",
+        "municipality": false
+      },
+      {
+        "code": "4107",
+        "name": "新乡市",
+        "shortName": "新乡",
+        "nameCapitalPy": "XXS",
+        "shortNameCapitalPy": "XX",
+        "nameFullPy": "XINXIANGSHI",
+        "shortNameFullPy": "XINXIANG",
+        "municipality": false
+      },
+      {
+        "code": "4108",
+        "name": "焦作市",
+        "shortName": "焦作",
+        "nameCapitalPy": "JZS",
+        "shortNameCapitalPy": "JZ",
+        "nameFullPy": "JIAOZUOSHI",
+        "shortNameFullPy": "JIAOZUO",
+        "municipality": false
+      },
+      {
+        "code": "4109",
+        "name": "濮阳市",
+        "shortName": "濮阳",
+        "nameCapitalPy": "PYS",
+        "shortNameCapitalPy": "PY",
+        "nameFullPy": "PUYANGSHI",
+        "shortNameFullPy": "PUYANG",
+        "municipality": false
+      },
+      {
+        "code": "4110",
+        "name": "许昌市",
+        "shortName": "许昌",
+        "nameCapitalPy": "XCS",
+        "shortNameCapitalPy": "XC",
+        "nameFullPy": "XUCHANGSHI",
+        "shortNameFullPy": "XUCHANG",
+        "municipality": false
+      },
+      {
+        "code": "4111",
+        "name": "漯河市",
+        "shortName": "漯河",
+        "nameCapitalPy": "LHS",
+        "shortNameCapitalPy": "LH",
+        "nameFullPy": "LUOHESHI",
+        "shortNameFullPy": "LUOHE",
+        "municipality": false
+      },
+      {
+        "code": "4112",
+        "name": "三门峡市",
+        "shortName": "三门峡",
+        "nameCapitalPy": "SMXS",
+        "shortNameCapitalPy": "SMX",
+        "nameFullPy": "SANMENXIASHI",
+        "shortNameFullPy": "SANMENXIA",
+        "municipality": false
+      },
+      {
+        "code": "4113",
+        "name": "南阳市",
+        "shortName": "南阳",
+        "nameCapitalPy": "NYS",
+        "shortNameCapitalPy": "NY",
+        "nameFullPy": "NANYANGSHI",
+        "shortNameFullPy": "NANYANG",
+        "municipality": false
+      },
+      {
+        "code": "4114",
+        "name": "商丘市",
+        "shortName": "商丘",
+        "nameCapitalPy": "SQS",
+        "shortNameCapitalPy": "SQ",
+        "nameFullPy": "SHANGQIUSHI",
+        "shortNameFullPy": "SHANGQIU",
+        "municipality": false
+      },
+      {
+        "code": "4115",
+        "name": "信阳市",
+        "shortName": "信阳",
+        "nameCapitalPy": "XYS",
+        "shortNameCapitalPy": "XY",
+        "nameFullPy": "XINYANGSHI",
+        "shortNameFullPy": "XINYANG",
+        "municipality": false
+      },
+      {
+        "code": "4116",
+        "name": "周口市",
+        "shortName": "周口",
+        "nameCapitalPy": "ZKS",
+        "shortNameCapitalPy": "ZK",
+        "nameFullPy": "ZHOUKOUSHI",
+        "shortNameFullPy": "ZHOUKOU",
+        "municipality": false
+      },
+      {
+        "code": "4117",
+        "name": "驻马店市",
+        "shortName": "驻马店",
+        "nameCapitalPy": "ZMDS",
+        "shortNameCapitalPy": "ZMD",
+        "nameFullPy": "ZHUMADIANSHI",
+        "shortNameFullPy": "ZHUMADIAN",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "4200",
+    "name": "湖北省",
+    "shortName": "湖北",
+    "nameCapitalPy": "HBS",
+    "nameFullPy": "HUBEISHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "4201",
+        "name": "武汉市",
+        "shortName": "武汉",
+        "nameCapitalPy": "WHS",
+        "shortNameCapitalPy": "WH",
+        "nameFullPy": "WUHANSHI",
+        "shortNameFullPy": "WUHAN",
+        "municipality": false
+      },
+      {
+        "code": "4202",
+        "name": "黄石市",
+        "shortName": "黄石",
+        "nameCapitalPy": "HSS",
+        "shortNameCapitalPy": "HS",
+        "nameFullPy": "HUANGSHISHI",
+        "shortNameFullPy": "HUANGSHI",
+        "municipality": false
+      },
+      {
+        "code": "4203",
+        "name": "十堰市",
+        "shortName": "十堰",
+        "nameCapitalPy": "SYS",
+        "shortNameCapitalPy": "SY",
+        "nameFullPy": "SHIYANSHI",
+        "shortNameFullPy": "SHIYAN",
+        "municipality": false
+      },
+      {
+        "code": "4205",
+        "name": "宜昌市",
+        "shortName": "宜昌",
+        "nameCapitalPy": "YCS",
+        "shortNameCapitalPy": "YC",
+        "nameFullPy": "YICHANGSHI",
+        "shortNameFullPy": "YICHANG",
+        "municipality": false
+      },
+      {
+        "code": "4206",
+        "name": "襄阳市",
+        "shortName": "襄阳",
+        "nameCapitalPy": "XYS",
+        "shortNameCapitalPy": "XY",
+        "nameFullPy": "XIANGYANGSHI",
+        "shortNameFullPy": "XIANGYANG",
+        "municipality": false
+      },
+      {
+        "code": "4207",
+        "name": "鄂州市",
+        "shortName": "鄂州",
+        "nameCapitalPy": "EZS",
+        "shortNameCapitalPy": "EZ",
+        "nameFullPy": "EZHOUSHI",
+        "shortNameFullPy": "EZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4208",
+        "name": "荆门市",
+        "shortName": "荆门",
+        "nameCapitalPy": "JMS",
+        "shortNameCapitalPy": "JM",
+        "nameFullPy": "JINGMENSHI",
+        "shortNameFullPy": "JINGMEN",
+        "municipality": false
+      },
+      {
+        "code": "4209",
+        "name": "孝感市",
+        "shortName": "孝感",
+        "nameCapitalPy": "XGS",
+        "shortNameCapitalPy": "XG",
+        "nameFullPy": "XIAOGANSHI",
+        "shortNameFullPy": "XIAOGAN",
+        "municipality": false
+      },
+      {
+        "code": "4210",
+        "name": "荆州市",
+        "shortName": "荆州",
+        "nameCapitalPy": "JZS",
+        "shortNameCapitalPy": "JZ",
+        "nameFullPy": "JINGZHOUSHI",
+        "shortNameFullPy": "JINGZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4211",
+        "name": "黄冈市",
+        "shortName": "黄冈",
+        "nameCapitalPy": "HGS",
+        "shortNameCapitalPy": "HG",
+        "nameFullPy": "HUANGGANGSHI",
+        "shortNameFullPy": "HUANGGANG",
+        "municipality": false
+      },
+      {
+        "code": "4212",
+        "name": "咸宁市",
+        "shortName": "咸宁",
+        "nameCapitalPy": "XNS",
+        "shortNameCapitalPy": "XN",
+        "nameFullPy": "XIANNINGSHI",
+        "shortNameFullPy": "XIANNING",
+        "municipality": false
+      },
+      {
+        "code": "4213",
+        "name": "随州市",
+        "shortName": "随州",
+        "nameCapitalPy": "SZS",
+        "shortNameCapitalPy": "SZ",
+        "nameFullPy": "SUIZHOUSHI",
+        "shortNameFullPy": "SUIZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4228",
+        "name": "恩施土家族苗族自治州",
+        "shortName": "恩施",
+        "nameCapitalPy": "ESTJZMZZZZ",
+        "shortNameCapitalPy": "ES",
+        "nameFullPy": "ENSHITUJIAZUMIAOZUZIZHIZHOU",
+        "shortNameFullPy": "ENSHI",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "4300",
+    "name": "湖南省",
+    "shortName": "湖南",
+    "nameCapitalPy": "HNS",
+    "nameFullPy": "HUNANSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "4301",
+        "name": "长沙市",
+        "shortName": "长沙",
+        "nameCapitalPy": "ZSS",
+        "shortNameCapitalPy": "ZS",
+        "nameFullPy": "CHANGSHASHI",
+        "shortNameFullPy": "CHANGSHA",
+        "municipality": false
+      },
+      {
+        "code": "4302",
+        "name": "株洲市",
+        "shortName": "株洲",
+        "nameCapitalPy": "ZZS",
+        "shortNameCapitalPy": "ZZ",
+        "nameFullPy": "ZHUZHOUSHI",
+        "shortNameFullPy": "ZHUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4303",
+        "name": "湘潭市",
+        "shortName": "湘潭",
+        "nameCapitalPy": "XTS",
+        "shortNameCapitalPy": "XT",
+        "nameFullPy": "XIANGTANSHI",
+        "shortNameFullPy": "XIANGTAN",
+        "municipality": false
+      },
+      {
+        "code": "4304",
+        "name": "衡阳市",
+        "shortName": "衡阳",
+        "nameCapitalPy": "HYS",
+        "shortNameCapitalPy": "HY",
+        "nameFullPy": "HENGYANGSHI",
+        "shortNameFullPy": "HENGYANG",
+        "municipality": false
+      },
+      {
+        "code": "4305",
+        "name": "邵阳市",
+        "shortName": "邵阳",
+        "nameCapitalPy": "SYS",
+        "shortNameCapitalPy": "SY",
+        "nameFullPy": "SHAOYANGSHI",
+        "shortNameFullPy": "SHAOYANG",
+        "municipality": false
+      },
+      {
+        "code": "4306",
+        "name": "岳阳市",
+        "shortName": "岳阳",
+        "nameCapitalPy": "YYS",
+        "shortNameCapitalPy": "YY",
+        "nameFullPy": "YUEYANGSHI",
+        "shortNameFullPy": "YUEYANG",
+        "municipality": false
+      },
+      {
+        "code": "4307",
+        "name": "常德市",
+        "shortName": "常德",
+        "nameCapitalPy": "CDS",
+        "shortNameCapitalPy": "CD",
+        "nameFullPy": "CHANGDESHI",
+        "shortNameFullPy": "CHANGDE",
+        "municipality": false
+      },
+      {
+        "code": "4308",
+        "name": "张家界市",
+        "shortName": "张家界",
+        "nameCapitalPy": "ZJJS",
+        "shortNameCapitalPy": "ZJJ",
+        "nameFullPy": "ZHANGJIAJIESHI",
+        "shortNameFullPy": "ZHANGJIAJIE",
+        "municipality": false
+      },
+      {
+        "code": "4309",
+        "name": "益阳市",
+        "shortName": "益阳",
+        "nameCapitalPy": "YYS",
+        "shortNameCapitalPy": "YY",
+        "nameFullPy": "YIYANGSHI",
+        "shortNameFullPy": "YIYANG",
+        "municipality": false
+      },
+      {
+        "code": "4310",
+        "name": "郴州市",
+        "shortName": "郴州",
+        "nameCapitalPy": "CZS",
+        "shortNameCapitalPy": "CZ",
+        "nameFullPy": "CHENZHOUSHI",
+        "shortNameFullPy": "CHENZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4311",
+        "name": "永州市",
+        "shortName": "永州",
+        "nameCapitalPy": "YZS",
+        "shortNameCapitalPy": "YZ",
+        "nameFullPy": "YONGZHOUSHI",
+        "shortNameFullPy": "YONGZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4312",
+        "name": "怀化市",
+        "shortName": "怀化",
+        "nameCapitalPy": "HHS",
+        "shortNameCapitalPy": "HH",
+        "nameFullPy": "HUAIHUASHI",
+        "shortNameFullPy": "HUAIHUA",
+        "municipality": false
+      },
+      {
+        "code": "4313",
+        "name": "娄底市",
+        "shortName": "娄底",
+        "nameCapitalPy": "LDS",
+        "shortNameCapitalPy": "LD",
+        "nameFullPy": "LOUDISHI",
+        "shortNameFullPy": "LOUDI",
+        "municipality": false
+      },
+      {
+        "code": "4331",
+        "name": "湘西土家族苗族自治州",
+        "shortName": "湘西",
+        "nameCapitalPy": "XXTJZMZZZZ",
+        "shortNameCapitalPy": "XX",
+        "nameFullPy": "XIANGXITUJIAZUMIAOZUZIZHIZHOU",
+        "shortNameFullPy": "XIANGXI",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "4400",
+    "name": "广东省",
+    "shortName": "广东",
+    "nameCapitalPy": "GDS",
+    "nameFullPy": "GUANGDONGSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "4401",
+        "name": "广州市",
+        "shortName": "广州",
+        "nameCapitalPy": "GZS",
+        "shortNameCapitalPy": "GZ",
+        "nameFullPy": "GUANGZHOUSHI",
+        "shortNameFullPy": "GUANGZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4402",
+        "name": "韶关市",
+        "shortName": "韶关",
+        "nameCapitalPy": "SGS",
+        "shortNameCapitalPy": "SG",
+        "nameFullPy": "SHAOGUANSHI",
+        "shortNameFullPy": "SHAOGUAN",
+        "municipality": false
+      },
+      {
+        "code": "4403",
+        "name": "深圳市",
+        "shortName": "深圳",
+        "nameCapitalPy": "SZS",
+        "shortNameCapitalPy": "SZ",
+        "nameFullPy": "SHENZHENSHI",
+        "shortNameFullPy": "SHENZHEN",
+        "municipality": false
+      },
+      {
+        "code": "4404",
+        "name": "珠海市",
+        "shortName": "珠海",
+        "nameCapitalPy": "ZHS",
+        "shortNameCapitalPy": "ZH",
+        "nameFullPy": "ZHUHAISHI",
+        "shortNameFullPy": "ZHUHAI",
+        "municipality": false
+      },
+      {
+        "code": "4405",
+        "name": "汕头市",
+        "shortName": "汕头",
+        "nameCapitalPy": "STS",
+        "shortNameCapitalPy": "ST",
+        "nameFullPy": "SHANTOUSHI",
+        "shortNameFullPy": "SHANTOU",
+        "municipality": false
+      },
+      {
+        "code": "4406",
+        "name": "佛山市",
+        "shortName": "佛山",
+        "nameCapitalPy": "FSS",
+        "shortNameCapitalPy": "FS",
+        "nameFullPy": "FOSHANSHI",
+        "shortNameFullPy": "FOSHAN",
+        "municipality": false
+      },
+      {
+        "code": "4407",
+        "name": "江门市",
+        "shortName": "江门",
+        "nameCapitalPy": "JMS",
+        "shortNameCapitalPy": "JM",
+        "nameFullPy": "JIANGMENSHI",
+        "shortNameFullPy": "JIANGMEN",
+        "municipality": false
+      },
+      {
+        "code": "4408",
+        "name": "湛江市",
+        "shortName": "湛江",
+        "nameCapitalPy": "ZJS",
+        "shortNameCapitalPy": "ZJ",
+        "nameFullPy": "ZHANJIANGSHI",
+        "shortNameFullPy": "ZHANJIANG",
+        "municipality": false
+      },
+      {
+        "code": "4409",
+        "name": "茂名市",
+        "shortName": "茂名",
+        "nameCapitalPy": "MMS",
+        "shortNameCapitalPy": "MM",
+        "nameFullPy": "MAOMINGSHI",
+        "shortNameFullPy": "MAOMING",
+        "municipality": false
+      },
+      {
+        "code": "4412",
+        "name": "肇庆市",
+        "shortName": "肇庆",
+        "nameCapitalPy": "ZQS",
+        "shortNameCapitalPy": "ZQ",
+        "nameFullPy": "ZHAOQINGSHI",
+        "shortNameFullPy": "ZHAOQING",
+        "municipality": false
+      },
+      {
+        "code": "4413",
+        "name": "惠州市",
+        "shortName": "惠州",
+        "nameCapitalPy": "HZS",
+        "shortNameCapitalPy": "HZ",
+        "nameFullPy": "HUIZHOUSHI",
+        "shortNameFullPy": "HUIZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4414",
+        "name": "梅州市",
+        "shortName": "梅州",
+        "nameCapitalPy": "MZS",
+        "shortNameCapitalPy": "MZ",
+        "nameFullPy": "MEIZHOUSHI",
+        "shortNameFullPy": "MEIZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4415",
+        "name": "汕尾市",
+        "shortName": "汕尾",
+        "nameCapitalPy": "SWS",
+        "shortNameCapitalPy": "SW",
+        "nameFullPy": "SHANWEISHI",
+        "shortNameFullPy": "SHANWEI",
+        "municipality": false
+      },
+      {
+        "code": "4416",
+        "name": "河源市",
+        "shortName": "河源",
+        "nameCapitalPy": "HYS",
+        "shortNameCapitalPy": "HY",
+        "nameFullPy": "HEYUANSHI",
+        "shortNameFullPy": "HEYUAN",
+        "municipality": false
+      },
+      {
+        "code": "4417",
+        "name": "阳江市",
+        "shortName": "阳江",
+        "nameCapitalPy": "YJS",
+        "shortNameCapitalPy": "YJ",
+        "nameFullPy": "YANGJIANGSHI",
+        "shortNameFullPy": "YANGJIANG",
+        "municipality": false
+      },
+      {
+        "code": "4418",
+        "name": "清远市",
+        "shortName": "清远",
+        "nameCapitalPy": "QYS",
+        "shortNameCapitalPy": "QY",
+        "nameFullPy": "QINGYUANSHI",
+        "shortNameFullPy": "QINGYUAN",
+        "municipality": false
+      },
+      {
+        "code": "4419",
+        "name": "东莞市",
+        "shortName": "东莞",
+        "nameCapitalPy": "DGS",
+        "shortNameCapitalPy": "DG",
+        "nameFullPy": "DONGGUANSHI",
+        "shortNameFullPy": "DONGGUAN",
+        "municipality": false
+      },
+      {
+        "code": "4420",
+        "name": "中山市",
+        "shortName": "中山",
+        "nameCapitalPy": "ZSS",
+        "shortNameCapitalPy": "ZS",
+        "nameFullPy": "ZHONGSHANSHI",
+        "shortNameFullPy": "ZHONGSHAN",
+        "municipality": false
+      },
+      {
+        "code": "4451",
+        "name": "潮州市",
+        "shortName": "潮州",
+        "nameCapitalPy": "CZS",
+        "shortNameCapitalPy": "CZ",
+        "nameFullPy": "CHAOZHOUSHI",
+        "shortNameFullPy": "CHAOZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4452",
+        "name": "揭阳市",
+        "shortName": "揭阳",
+        "nameCapitalPy": "JYS",
+        "shortNameCapitalPy": "JY",
+        "nameFullPy": "JIEYANGSHI",
+        "shortNameFullPy": "JIEYANG",
+        "municipality": false
+      },
+      {
+        "code": "4453",
+        "name": "云浮市",
+        "shortName": "云浮",
+        "nameCapitalPy": "YFS",
+        "shortNameCapitalPy": "YF",
+        "nameFullPy": "YUNFUSHI",
+        "shortNameFullPy": "YUNFU",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "4500",
+    "name": "广西壮族自治区",
+    "shortName": "广西",
+    "nameCapitalPy": "GXZZZZQ",
+    "nameFullPy": "GUANGXIZHUANGZUZIZHIQU",
+    "municipality": false,
+    "children": [
+      {
+        "code": "4501",
+        "name": "南宁市",
+        "shortName": "南宁",
+        "nameCapitalPy": "NNS",
+        "shortNameCapitalPy": "NN",
+        "nameFullPy": "NANNINGSHI",
+        "shortNameFullPy": "NANNING",
+        "municipality": false
+      },
+      {
+        "code": "4502",
+        "name": "柳州市",
+        "shortName": "柳州",
+        "nameCapitalPy": "LZS",
+        "shortNameCapitalPy": "LZ",
+        "nameFullPy": "LIUZHOUSHI",
+        "shortNameFullPy": "LIUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4503",
+        "name": "桂林市",
+        "shortName": "桂林",
+        "nameCapitalPy": "GLS",
+        "shortNameCapitalPy": "GL",
+        "nameFullPy": "GUILINSHI",
+        "shortNameFullPy": "GUILIN",
+        "municipality": false
+      },
+      {
+        "code": "4504",
+        "name": "梧州市",
+        "shortName": "梧州",
+        "nameCapitalPy": "WZS",
+        "shortNameCapitalPy": "WZ",
+        "nameFullPy": "WUZHOUSHI",
+        "shortNameFullPy": "WUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4505",
+        "name": "北海市",
+        "shortName": "北海",
+        "nameCapitalPy": "BHS",
+        "shortNameCapitalPy": "BH",
+        "nameFullPy": "BEIHAISHI",
+        "shortNameFullPy": "BEIHAI",
+        "municipality": false
+      },
+      {
+        "code": "4506",
+        "name": "防城港市",
+        "shortName": "防城港",
+        "nameCapitalPy": "FCGS",
+        "shortNameCapitalPy": "FCG",
+        "nameFullPy": "FANGCHENGGANGSHI",
+        "shortNameFullPy": "FANGCHENGGANG",
+        "municipality": false
+      },
+      {
+        "code": "4507",
+        "name": "钦州市",
+        "shortName": "钦州",
+        "nameCapitalPy": "QZS",
+        "shortNameCapitalPy": "QZ",
+        "nameFullPy": "QINZHOUSHI",
+        "shortNameFullPy": "QINZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4508",
+        "name": "贵港市",
+        "shortName": "贵港",
+        "nameCapitalPy": "GGS",
+        "shortNameCapitalPy": "GG",
+        "nameFullPy": "GUIGANGSHI",
+        "shortNameFullPy": "GUIGANG",
+        "municipality": false
+      },
+      {
+        "code": "4509",
+        "name": "玉林市",
+        "shortName": "玉林",
+        "nameCapitalPy": "YLS",
+        "shortNameCapitalPy": "YL",
+        "nameFullPy": "YULINSHI",
+        "shortNameFullPy": "YULIN",
+        "municipality": false
+      },
+      {
+        "code": "4510",
+        "name": "百色市",
+        "shortName": "百色",
+        "nameCapitalPy": "BSS",
+        "shortNameCapitalPy": "BS",
+        "nameFullPy": "BAISESHI",
+        "shortNameFullPy": "BAISE",
+        "municipality": false
+      },
+      {
+        "code": "4511",
+        "name": "贺州市",
+        "shortName": "贺州",
+        "nameCapitalPy": "HZS",
+        "shortNameCapitalPy": "HZ",
+        "nameFullPy": "HEZHOUSHI",
+        "shortNameFullPy": "HEZHOU",
+        "municipality": false
+      },
+      {
+        "code": "4512",
+        "name": "河池市",
+        "shortName": "河池",
+        "nameCapitalPy": "HCS",
+        "shortNameCapitalPy": "HC",
+        "nameFullPy": "HECHISHI",
+        "shortNameFullPy": "HECHI",
+        "municipality": false
+      },
+      {
+        "code": "4513",
+        "name": "来宾市",
+        "shortName": "来宾",
+        "nameCapitalPy": "LBS",
+        "shortNameCapitalPy": "LB",
+        "nameFullPy": "LAIBINSHI",
+        "shortNameFullPy": "LAIBIN",
+        "municipality": false
+      },
+      {
+        "code": "4514",
+        "name": "崇左市",
+        "shortName": "崇左",
+        "nameCapitalPy": "CZS",
+        "shortNameCapitalPy": "CZ",
+        "nameFullPy": "CHONGZUOSHI",
+        "shortNameFullPy": "CHONGZUO",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "4600",
+    "name": "海南省",
+    "shortName": "海南",
+    "nameCapitalPy": "HNS",
+    "nameFullPy": "HAINANSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "4601",
+        "name": "海口市",
+        "shortName": "海口",
+        "nameCapitalPy": "HKS",
+        "shortNameCapitalPy": "HK",
+        "nameFullPy": "HAIKOUSHI",
+        "shortNameFullPy": "HAIKOU",
+        "municipality": false
+      },
+      {
+        "code": "4602",
+        "name": "三亚市",
+        "shortName": "三亚",
+        "nameCapitalPy": "SYS",
+        "shortNameCapitalPy": "SY",
+        "nameFullPy": "SANYASHI",
+        "shortNameFullPy": "SANYA",
+        "municipality": false
+      },
+      {
+        "code": "4603",
+        "name": "三沙市",
+        "shortName": "三沙",
+        "nameCapitalPy": "SSS",
+        "shortNameCapitalPy": "SS",
+        "nameFullPy": "SANSHASHI",
+        "shortNameFullPy": "SANSHA",
+        "municipality": false
+      },
+      {
+        "code": "4604",
+        "name": "儋州市",
+        "shortName": "儋州",
+        "nameCapitalPy": "DZS",
+        "shortNameCapitalPy": "DZ",
+        "nameFullPy": "DANZHOUSHI",
+        "shortNameFullPy": "DANZHOU",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "5100",
+    "name": "四川省",
+    "shortName": "四川",
+    "nameCapitalPy": "SCS",
+    "nameFullPy": "SICHUANSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "5101",
+        "name": "成都市",
+        "shortName": "成都",
+        "nameCapitalPy": "CDS",
+        "shortNameCapitalPy": "CD",
+        "nameFullPy": "CHENGDOUSHI",
+        "shortNameFullPy": "CHENGDOU",
+        "municipality": false
+      },
+      {
+        "code": "5103",
+        "name": "自贡市",
+        "shortName": "自贡",
+        "nameCapitalPy": "ZGS",
+        "shortNameCapitalPy": "ZG",
+        "nameFullPy": "ZIGONGSHI",
+        "shortNameFullPy": "ZIGONG",
+        "municipality": false
+      },
+      {
+        "code": "5104",
+        "name": "攀枝花市",
+        "shortName": "攀枝花",
+        "nameCapitalPy": "PZHS",
+        "shortNameCapitalPy": "PZH",
+        "nameFullPy": "PANZHIHUASHI",
+        "shortNameFullPy": "PANZHIHUA",
+        "municipality": false
+      },
+      {
+        "code": "5105",
+        "name": "泸州市",
+        "shortName": "泸州",
+        "nameCapitalPy": "LZS",
+        "shortNameCapitalPy": "LZ",
+        "nameFullPy": "LUZHOUSHI",
+        "shortNameFullPy": "LUZHOU",
+        "municipality": false
+      },
+      {
+        "code": "5106",
+        "name": "德阳市",
+        "shortName": "德阳",
+        "nameCapitalPy": "DYS",
+        "shortNameCapitalPy": "DY",
+        "nameFullPy": "DEYANGSHI",
+        "shortNameFullPy": "DEYANG",
+        "municipality": false
+      },
+      {
+        "code": "5107",
+        "name": "绵阳市",
+        "shortName": "绵阳",
+        "nameCapitalPy": "MYS",
+        "shortNameCapitalPy": "MY",
+        "nameFullPy": "MIANYANGSHI",
+        "shortNameFullPy": "MIANYANG",
+        "municipality": false
+      },
+      {
+        "code": "5108",
+        "name": "广元市",
+        "shortName": "广元",
+        "nameCapitalPy": "GYS",
+        "shortNameCapitalPy": "GY",
+        "nameFullPy": "GUANGYUANSHI",
+        "shortNameFullPy": "GUANGYUAN",
+        "municipality": false
+      },
+      {
+        "code": "5109",
+        "name": "遂宁市",
+        "shortName": "遂宁",
+        "nameCapitalPy": "SNS",
+        "shortNameCapitalPy": "SN",
+        "nameFullPy": "SUININGSHI",
+        "shortNameFullPy": "SUINING",
+        "municipality": false
+      },
+      {
+        "code": "5110",
+        "name": "内江市",
+        "shortName": "内江",
+        "nameCapitalPy": "NJS",
+        "shortNameCapitalPy": "NJ",
+        "nameFullPy": "NEIJIANGSHI",
+        "shortNameFullPy": "NEIJIANG",
+        "municipality": false
+      },
+      {
+        "code": "5111",
+        "name": "乐山市",
+        "shortName": "乐山",
+        "nameCapitalPy": "LSS",
+        "shortNameCapitalPy": "LS",
+        "nameFullPy": "LESHANSHI",
+        "shortNameFullPy": "LESHAN",
+        "municipality": false
+      },
+      {
+        "code": "5113",
+        "name": "南充市",
+        "shortName": "南充",
+        "nameCapitalPy": "NCS",
+        "shortNameCapitalPy": "NC",
+        "nameFullPy": "NANCHONGSHI",
+        "shortNameFullPy": "NANCHONG",
+        "municipality": false
+      },
+      {
+        "code": "5114",
+        "name": "眉山市",
+        "shortName": "眉山",
+        "nameCapitalPy": "MSS",
+        "shortNameCapitalPy": "MS",
+        "nameFullPy": "MEISHANSHI",
+        "shortNameFullPy": "MEISHAN",
+        "municipality": false
+      },
+      {
+        "code": "5115",
+        "name": "宜宾市",
+        "shortName": "宜宾",
+        "nameCapitalPy": "YBS",
+        "shortNameCapitalPy": "YB",
+        "nameFullPy": "YIBINSHI",
+        "shortNameFullPy": "YIBIN",
+        "municipality": false
+      },
+      {
+        "code": "5116",
+        "name": "广安市",
+        "shortName": "广安",
+        "nameCapitalPy": "GAS",
+        "shortNameCapitalPy": "GA",
+        "nameFullPy": "GUANGANSHI",
+        "shortNameFullPy": "GUANGAN",
+        "municipality": false
+      },
+      {
+        "code": "5117",
+        "name": "达州市",
+        "shortName": "达州",
+        "nameCapitalPy": "DZS",
+        "shortNameCapitalPy": "DZ",
+        "nameFullPy": "DAZHOUSHI",
+        "shortNameFullPy": "DAZHOU",
+        "municipality": false
+      },
+      {
+        "code": "5118",
+        "name": "雅安市",
+        "shortName": "雅安",
+        "nameCapitalPy": "YAS",
+        "shortNameCapitalPy": "YA",
+        "nameFullPy": "YAANSHI",
+        "shortNameFullPy": "YAAN",
+        "municipality": false
+      },
+      {
+        "code": "5119",
+        "name": "巴中市",
+        "shortName": "巴中",
+        "nameCapitalPy": "BZS",
+        "shortNameCapitalPy": "BZ",
+        "nameFullPy": "BAZHONGSHI",
+        "shortNameFullPy": "BAZHONG",
+        "municipality": false
+      },
+      {
+        "code": "5120",
+        "name": "资阳市",
+        "shortName": "资阳",
+        "nameCapitalPy": "ZYS",
+        "shortNameCapitalPy": "ZY",
+        "nameFullPy": "ZIYANGSHI",
+        "shortNameFullPy": "ZIYANG",
+        "municipality": false
+      },
+      {
+        "code": "5132",
+        "name": "阿坝藏族羌族自治州",
+        "shortName": "阿坝",
+        "nameCapitalPy": "ABZZQZZZZ",
+        "shortNameCapitalPy": "AB",
+        "nameFullPy": "ABAZANGZUQIANGZUZIZHIZHOU",
+        "shortNameFullPy": "ABA",
+        "municipality": false
+      },
+      {
+        "code": "5133",
+        "name": "甘孜藏族自治州",
+        "shortName": "甘孜",
+        "nameCapitalPy": "GZZZZZZ",
+        "shortNameCapitalPy": "GZ",
+        "nameFullPy": "GANZIZANGZUZIZHIZHOU",
+        "shortNameFullPy": "GANZI",
+        "municipality": false
+      },
+      {
+        "code": "5134",
+        "name": "凉山彝族自治州",
+        "shortName": "凉山",
+        "nameCapitalPy": "LSYZZZZ",
+        "shortNameCapitalPy": "LS",
+        "nameFullPy": "LIANGSHANYIZUZIZHIZHOU",
+        "shortNameFullPy": "LIANGSHAN",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "5200",
+    "name": "贵州省",
+    "shortName": "贵州",
+    "nameCapitalPy": "GZS",
+    "nameFullPy": "GUIZHOUSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "5201",
+        "name": "贵阳市",
+        "shortName": "贵阳",
+        "nameCapitalPy": "GYS",
+        "shortNameCapitalPy": "GY",
+        "nameFullPy": "GUIYANGSHI",
+        "shortNameFullPy": "GUIYANG",
+        "municipality": false
+      },
+      {
+        "code": "5202",
+        "name": "六盘水市",
+        "shortName": "六盘水",
+        "nameCapitalPy": "LPSS",
+        "shortNameCapitalPy": "LPS",
+        "nameFullPy": "LIUPANSHUISHI",
+        "shortNameFullPy": "LIUPANSHUI",
+        "municipality": false
+      },
+      {
+        "code": "5203",
+        "name": "遵义市",
+        "shortName": "遵义",
+        "nameCapitalPy": "ZYS",
+        "shortNameCapitalPy": "ZY",
+        "nameFullPy": "ZUNYISHI",
+        "shortNameFullPy": "ZUNYI",
+        "municipality": false
+      },
+      {
+        "code": "5204",
+        "name": "安顺市",
+        "shortName": "安顺",
+        "nameCapitalPy": "ASS",
+        "shortNameCapitalPy": "AS",
+        "nameFullPy": "ANSHUNSHI",
+        "shortNameFullPy": "ANSHUN",
+        "municipality": false
+      },
+      {
+        "code": "5205",
+        "name": "毕节市",
+        "shortName": "毕节",
+        "nameCapitalPy": "BJS",
+        "shortNameCapitalPy": "BJ",
+        "nameFullPy": "BIJIESHI",
+        "shortNameFullPy": "BIJIE",
+        "municipality": false
+      },
+      {
+        "code": "5206",
+        "name": "铜仁市",
+        "shortName": "铜仁",
+        "nameCapitalPy": "TRS",
+        "shortNameCapitalPy": "TR",
+        "nameFullPy": "TONGRENSHI",
+        "shortNameFullPy": "TONGREN",
+        "municipality": false
+      },
+      {
+        "code": "5223",
+        "name": "黔西南布依族苗族自治州",
+        "shortName": "黔西南",
+        "nameCapitalPy": "QXNBYZMZZZZ",
+        "shortNameCapitalPy": "QXN",
+        "nameFullPy": "QIANXINANBUYIZUMIAOZUZIZHIZHOU",
+        "shortNameFullPy": "QIANXINAN",
+        "municipality": false
+      },
+      {
+        "code": "5226",
+        "name": "黔东南苗族侗族自治州",
+        "shortName": "黔东南",
+        "nameCapitalPy": "QDNMZDZZZZ",
+        "shortNameCapitalPy": "QDN",
+        "nameFullPy": "QIANDONGNANMIAOZUDONGZUZIZHIZHOU",
+        "shortNameFullPy": "QIANDONGNAN",
+        "municipality": false
+      },
+      {
+        "code": "5227",
+        "name": "黔南布依族苗族自治州",
+        "shortName": "黔南",
+        "nameCapitalPy": "QNBYZMZZZZ",
+        "shortNameCapitalPy": "QN",
+        "nameFullPy": "QIANNANBUYIZUMIAOZUZIZHIZHOU",
+        "shortNameFullPy": "QIANNAN",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "5300",
+    "name": "云南省",
+    "shortName": "云南",
+    "nameCapitalPy": "YNS",
+    "nameFullPy": "YUNNANSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "5301",
+        "name": "昆明市",
+        "shortName": "昆明",
+        "nameCapitalPy": "KMS",
+        "shortNameCapitalPy": "KM",
+        "nameFullPy": "KUNMINGSHI",
+        "shortNameFullPy": "KUNMING",
+        "municipality": false
+      },
+      {
+        "code": "5303",
+        "name": "曲靖市",
+        "shortName": "曲靖",
+        "nameCapitalPy": "QJS",
+        "shortNameCapitalPy": "QJ",
+        "nameFullPy": "QUJINGSHI",
+        "shortNameFullPy": "QUJING",
+        "municipality": false
+      },
+      {
+        "code": "5304",
+        "name": "玉溪市",
+        "shortName": "玉溪",
+        "nameCapitalPy": "YXS",
+        "shortNameCapitalPy": "YX",
+        "nameFullPy": "YUXISHI",
+        "shortNameFullPy": "YUXI",
+        "municipality": false
+      },
+      {
+        "code": "5305",
+        "name": "保山市",
+        "shortName": "保山",
+        "nameCapitalPy": "BSS",
+        "shortNameCapitalPy": "BS",
+        "nameFullPy": "BAOSHANSHI",
+        "shortNameFullPy": "BAOSHAN",
+        "municipality": false
+      },
+      {
+        "code": "5306",
+        "name": "昭通市",
+        "shortName": "昭通",
+        "nameCapitalPy": "ZTS",
+        "shortNameCapitalPy": "ZT",
+        "nameFullPy": "ZHAOTONGSHI",
+        "shortNameFullPy": "ZHAOTONG",
+        "municipality": false
+      },
+      {
+        "code": "5307",
+        "name": "丽江市",
+        "shortName": "丽江",
+        "nameCapitalPy": "LJS",
+        "shortNameCapitalPy": "LJ",
+        "nameFullPy": "LIJIANGSHI",
+        "shortNameFullPy": "LIJIANG",
+        "municipality": false
+      },
+      {
+        "code": "5308",
+        "name": "普洱市",
+        "shortName": "普洱",
+        "nameCapitalPy": "PES",
+        "shortNameCapitalPy": "PE",
+        "nameFullPy": "PUERSHI",
+        "shortNameFullPy": "PUER",
+        "municipality": false
+      },
+      {
+        "code": "5309",
+        "name": "临沧市",
+        "shortName": "临沧",
+        "nameCapitalPy": "LCS",
+        "shortNameCapitalPy": "LC",
+        "nameFullPy": "LINCANGSHI",
+        "shortNameFullPy": "LINCANG",
+        "municipality": false
+      },
+      {
+        "code": "5323",
+        "name": "楚雄彝族自治州",
+        "shortName": "楚雄",
+        "nameCapitalPy": "CXYZZZZ",
+        "shortNameCapitalPy": "CX",
+        "nameFullPy": "CHUXIONGYIZUZIZHIZHOU",
+        "shortNameFullPy": "CHUXIONG",
+        "municipality": false
+      },
+      {
+        "code": "5325",
+        "name": "红河哈尼族彝族自治州",
+        "shortName": "红河",
+        "nameCapitalPy": "HHHNZYZZZZ",
+        "shortNameCapitalPy": "HH",
+        "nameFullPy": "HONGHEHANIZUYIZUZIZHIZHOU",
+        "shortNameFullPy": "HONGHE",
+        "municipality": false
+      },
+      {
+        "code": "5326",
+        "name": "文山壮族苗族自治州",
+        "shortName": "文山",
+        "nameCapitalPy": "WSZZMZZZZ",
+        "shortNameCapitalPy": "WS",
+        "nameFullPy": "WENSHANZHUANGZUMIAOZUZIZHIZHOU",
+        "shortNameFullPy": "WENSHAN",
+        "municipality": false
+      },
+      {
+        "code": "5328",
+        "name": "西双版纳傣族自治州",
+        "shortName": "西双版纳",
+        "nameCapitalPy": "XSBNDZZZZ",
+        "shortNameCapitalPy": "XSBN",
+        "nameFullPy": "XISHUANGBANNADAIZUZIZHIZHOU",
+        "shortNameFullPy": "XISHUANGBANNA",
+        "municipality": false
+      },
+      {
+        "code": "5329",
+        "name": "大理白族自治州",
+        "shortName": "大理",
+        "nameCapitalPy": "DLBZZZZ",
+        "shortNameCapitalPy": "DL",
+        "nameFullPy": "DALIBAIZUZIZHIZHOU",
+        "shortNameFullPy": "DALI",
+        "municipality": false
+      },
+      {
+        "code": "5331",
+        "name": "德宏傣族景颇族自治州",
+        "shortName": "德宏",
+        "nameCapitalPy": "DHDZJPZZZZ",
+        "shortNameCapitalPy": "DH",
+        "nameFullPy": "DEHONGDAIZUJINGPOZUZIZHIZHOU",
+        "shortNameFullPy": "DEHONG",
+        "municipality": false
+      },
+      {
+        "code": "5333",
+        "name": "怒江傈僳族自治州",
+        "shortName": "怒江",
+        "nameCapitalPy": "NJLSZZZZ",
+        "shortNameCapitalPy": "NJ",
+        "nameFullPy": "NUJIANGLISUZUZIZHIZHOU",
+        "shortNameFullPy": "NUJIANG",
+        "municipality": false
+      },
+      {
+        "code": "5334",
+        "name": "迪庆藏族自治州",
+        "shortName": "迪庆",
+        "nameCapitalPy": "DQZZZZZ",
+        "shortNameCapitalPy": "DQ",
+        "nameFullPy": "DIQINGZANGZUZIZHIZHOU",
+        "shortNameFullPy": "DIQING",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "5400",
+    "name": "西藏自治区",
+    "shortName": "西藏",
+    "nameCapitalPy": "XZZZQ",
+    "nameFullPy": "XIZANGZIZHIQU",
+    "municipality": false,
+    "children": [
+      {
+        "code": "5401",
+        "name": "拉萨市",
+        "shortName": "拉萨",
+        "nameCapitalPy": "LSS",
+        "shortNameCapitalPy": "LS",
+        "nameFullPy": "LASASHI",
+        "shortNameFullPy": "LASA",
+        "municipality": false
+      },
+      {
+        "code": "5402",
+        "name": "日喀则市",
+        "shortName": "日喀则",
+        "nameCapitalPy": "RKZS",
+        "shortNameCapitalPy": "RKZ",
+        "nameFullPy": "RIKAZESHI",
+        "shortNameFullPy": "RIKAZE",
+        "municipality": false
+      },
+      {
+        "code": "5403",
+        "name": "昌都市",
+        "shortName": "昌都",
+        "nameCapitalPy": "CDS",
+        "shortNameCapitalPy": "CD",
+        "nameFullPy": "CHANGDOUSHI",
+        "shortNameFullPy": "CHANGDOU",
+        "municipality": false
+      },
+      {
+        "code": "5404",
+        "name": "林芝市",
+        "shortName": "林芝",
+        "nameCapitalPy": "LZS",
+        "shortNameCapitalPy": "LZ",
+        "nameFullPy": "LINZHISHI",
+        "shortNameFullPy": "LINZHI",
+        "municipality": false
+      },
+      {
+        "code": "5405",
+        "name": "山南市",
+        "shortName": "山南",
+        "nameCapitalPy": "SNS",
+        "shortNameCapitalPy": "SN",
+        "nameFullPy": "SHANNANSHI",
+        "shortNameFullPy": "SHANNAN",
+        "municipality": false
+      },
+      {
+        "code": "5406",
+        "name": "那曲市",
+        "shortName": "那曲",
+        "nameCapitalPy": "NQS",
+        "shortNameCapitalPy": "NQ",
+        "nameFullPy": "NEIQUSHI",
+        "shortNameFullPy": "NEIQU",
+        "municipality": false
+      },
+      {
+        "code": "5425",
+        "name": "阿里地区",
+        "shortName": "阿里",
+        "nameCapitalPy": "ALDQ",
+        "shortNameCapitalPy": "AL",
+        "nameFullPy": "ALIDIQU",
+        "shortNameFullPy": "ALI",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "6100",
+    "name": "陕西省",
+    "shortName": "陕西",
+    "nameCapitalPy": "SXS",
+    "nameFullPy": "SHANXISHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "6101",
+        "name": "西安市",
+        "shortName": "西安",
+        "nameCapitalPy": "XAS",
+        "shortNameCapitalPy": "XA",
+        "nameFullPy": "XIANSHI",
+        "shortNameFullPy": "XIAN",
+        "municipality": false
+      },
+      {
+        "code": "6102",
+        "name": "铜川市",
+        "shortName": "铜川",
+        "nameCapitalPy": "TCS",
+        "shortNameCapitalPy": "TC",
+        "nameFullPy": "TONGCHUANSHI",
+        "shortNameFullPy": "TONGCHUAN",
+        "municipality": false
+      },
+      {
+        "code": "6103",
+        "name": "宝鸡市",
+        "shortName": "宝鸡",
+        "nameCapitalPy": "BJS",
+        "shortNameCapitalPy": "BJ",
+        "nameFullPy": "BAOJISHI",
+        "shortNameFullPy": "BAOJI",
+        "municipality": false
+      },
+      {
+        "code": "6104",
+        "name": "咸阳市",
+        "shortName": "咸阳",
+        "nameCapitalPy": "XYS",
+        "shortNameCapitalPy": "XY",
+        "nameFullPy": "XIANYANGSHI",
+        "shortNameFullPy": "XIANYANG",
+        "municipality": false
+      },
+      {
+        "code": "6105",
+        "name": "渭南市",
+        "shortName": "渭南",
+        "nameCapitalPy": "WNS",
+        "shortNameCapitalPy": "WN",
+        "nameFullPy": "WEINANSHI",
+        "shortNameFullPy": "WEINAN",
+        "municipality": false
+      },
+      {
+        "code": "6106",
+        "name": "延安市",
+        "shortName": "延安",
+        "nameCapitalPy": "YAS",
+        "shortNameCapitalPy": "YA",
+        "nameFullPy": "YANANSHI",
+        "shortNameFullPy": "YANAN",
+        "municipality": false
+      },
+      {
+        "code": "6107",
+        "name": "汉中市",
+        "shortName": "汉中",
+        "nameCapitalPy": "HZS",
+        "shortNameCapitalPy": "HZ",
+        "nameFullPy": "HANZHONGSHI",
+        "shortNameFullPy": "HANZHONG",
+        "municipality": false
+      },
+      {
+        "code": "6108",
+        "name": "榆林市",
+        "shortName": "榆林",
+        "nameCapitalPy": "YLS",
+        "shortNameCapitalPy": "YL",
+        "nameFullPy": "YULINSHI",
+        "shortNameFullPy": "YULIN",
+        "municipality": false
+      },
+      {
+        "code": "6109",
+        "name": "安康市",
+        "shortName": "安康",
+        "nameCapitalPy": "AKS",
+        "shortNameCapitalPy": "AK",
+        "nameFullPy": "ANKANGSHI",
+        "shortNameFullPy": "ANKANG",
+        "municipality": false
+      },
+      {
+        "code": "6110",
+        "name": "商洛市",
+        "shortName": "商洛",
+        "nameCapitalPy": "SLS",
+        "shortNameCapitalPy": "SL",
+        "nameFullPy": "SHANGLUOSHI",
+        "shortNameFullPy": "SHANGLUO",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "6200",
+    "name": "甘肃省",
+    "shortName": "甘肃",
+    "nameCapitalPy": "GSS",
+    "nameFullPy": "GANSUSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "6201",
+        "name": "兰州市",
+        "shortName": "兰州",
+        "nameCapitalPy": "LZS",
+        "shortNameCapitalPy": "LZ",
+        "nameFullPy": "LANZHOUSHI",
+        "shortNameFullPy": "LANZHOU",
+        "municipality": false
+      },
+      {
+        "code": "6202",
+        "name": "嘉峪关市",
+        "shortName": "嘉峪关",
+        "nameCapitalPy": "JYGS",
+        "shortNameCapitalPy": "JYG",
+        "nameFullPy": "JIAYUGUANSHI",
+        "shortNameFullPy": "JIAYUGUAN",
+        "municipality": false
+      },
+      {
+        "code": "6203",
+        "name": "金昌市",
+        "shortName": "金昌",
+        "nameCapitalPy": "JCS",
+        "shortNameCapitalPy": "JC",
+        "nameFullPy": "JINCHANGSHI",
+        "shortNameFullPy": "JINCHANG",
+        "municipality": false
+      },
+      {
+        "code": "6204",
+        "name": "白银市",
+        "shortName": "白银",
+        "nameCapitalPy": "BYS",
+        "shortNameCapitalPy": "BY",
+        "nameFullPy": "BAIYINSHI",
+        "shortNameFullPy": "BAIYIN",
+        "municipality": false
+      },
+      {
+        "code": "6205",
+        "name": "天水市",
+        "shortName": "天水",
+        "nameCapitalPy": "TSS",
+        "shortNameCapitalPy": "TS",
+        "nameFullPy": "TIANSHUISHI",
+        "shortNameFullPy": "TIANSHUI",
+        "municipality": false
+      },
+      {
+        "code": "6206",
+        "name": "武威市",
+        "shortName": "武威",
+        "nameCapitalPy": "WWS",
+        "shortNameCapitalPy": "WW",
+        "nameFullPy": "WUWEISHI",
+        "shortNameFullPy": "WUWEI",
+        "municipality": false
+      },
+      {
+        "code": "6207",
+        "name": "张掖市",
+        "shortName": "张掖",
+        "nameCapitalPy": "ZYS",
+        "shortNameCapitalPy": "ZY",
+        "nameFullPy": "ZHANGYESHI",
+        "shortNameFullPy": "ZHANGYE",
+        "municipality": false
+      },
+      {
+        "code": "6208",
+        "name": "平凉市",
+        "shortName": "平凉",
+        "nameCapitalPy": "PLS",
+        "shortNameCapitalPy": "PL",
+        "nameFullPy": "PINGLIANGSHI",
+        "shortNameFullPy": "PINGLIANG",
+        "municipality": false
+      },
+      {
+        "code": "6209",
+        "name": "酒泉市",
+        "shortName": "酒泉",
+        "nameCapitalPy": "JQS",
+        "shortNameCapitalPy": "JQ",
+        "nameFullPy": "JIUQUANSHI",
+        "shortNameFullPy": "JIUQUAN",
+        "municipality": false
+      },
+      {
+        "code": "6210",
+        "name": "庆阳市",
+        "shortName": "庆阳",
+        "nameCapitalPy": "QYS",
+        "shortNameCapitalPy": "QY",
+        "nameFullPy": "QINGYANGSHI",
+        "shortNameFullPy": "QINGYANG",
+        "municipality": false
+      },
+      {
+        "code": "6211",
+        "name": "定西市",
+        "shortName": "定西",
+        "nameCapitalPy": "DXS",
+        "shortNameCapitalPy": "DX",
+        "nameFullPy": "DINGXISHI",
+        "shortNameFullPy": "DINGXI",
+        "municipality": false
+      },
+      {
+        "code": "6212",
+        "name": "陇南市",
+        "shortName": "陇南",
+        "nameCapitalPy": "LNS",
+        "shortNameCapitalPy": "LN",
+        "nameFullPy": "LONGNANSHI",
+        "shortNameFullPy": "LONGNAN",
+        "municipality": false
+      },
+      {
+        "code": "6229",
+        "name": "临夏回族自治州",
+        "shortName": "临夏",
+        "nameCapitalPy": "LXHZZZZ",
+        "shortNameCapitalPy": "LX",
+        "nameFullPy": "LINXIAHUIZUZIZHIZHOU",
+        "shortNameFullPy": "LINXIA",
+        "municipality": false
+      },
+      {
+        "code": "6230",
+        "name": "甘南藏族自治州",
+        "shortName": "甘南",
+        "nameCapitalPy": "GNZZZZZ",
+        "shortNameCapitalPy": "GN",
+        "nameFullPy": "GANNANZANGZUZIZHIZHOU",
+        "shortNameFullPy": "GANNAN",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "6300",
+    "name": "青海省",
+    "shortName": "青海",
+    "nameCapitalPy": "QHS",
+    "nameFullPy": "QINGHAISHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "6301",
+        "name": "西宁市",
+        "shortName": "西宁",
+        "nameCapitalPy": "XNS",
+        "shortNameCapitalPy": "XN",
+        "nameFullPy": "XININGSHI",
+        "shortNameFullPy": "XINING",
+        "municipality": false
+      },
+      {
+        "code": "6302",
+        "name": "海东市",
+        "shortName": "海东",
+        "nameCapitalPy": "HDS",
+        "shortNameCapitalPy": "HD",
+        "nameFullPy": "HAIDONGSHI",
+        "shortNameFullPy": "HAIDONG",
+        "municipality": false
+      },
+      {
+        "code": "6322",
+        "name": "海北藏族自治州",
+        "shortName": "海北",
+        "nameCapitalPy": "HBZZZZZ",
+        "shortNameCapitalPy": "HB",
+        "nameFullPy": "HAIBEIZANGZUZIZHIZHOU",
+        "shortNameFullPy": "HAIBEI",
+        "municipality": false
+      },
+      {
+        "code": "6323",
+        "name": "黄南藏族自治州",
+        "shortName": "黄南",
+        "nameCapitalPy": "HNZZZZZ",
+        "shortNameCapitalPy": "HN",
+        "nameFullPy": "HUANGNANZANGZUZIZHIZHOU",
+        "shortNameFullPy": "HUANGNAN",
+        "municipality": false
+      },
+      {
+        "code": "6325",
+        "name": "海南藏族自治州",
+        "shortName": "海南",
+        "nameCapitalPy": "HNZZZZZ",
+        "shortNameCapitalPy": "HN",
+        "nameFullPy": "HAINANZANGZUZIZHIZHOU",
+        "shortNameFullPy": "HAINAN",
+        "municipality": false
+      },
+      {
+        "code": "6326",
+        "name": "果洛藏族自治州",
+        "shortName": "果洛",
+        "nameCapitalPy": "GLZZZZZ",
+        "shortNameCapitalPy": "GL",
+        "nameFullPy": "GUOLUOZANGZUZIZHIZHOU",
+        "shortNameFullPy": "GUOLUO",
+        "municipality": false
+      },
+      {
+        "code": "6327",
+        "name": "玉树藏族自治州",
+        "shortName": "玉树",
+        "nameCapitalPy": "YSZZZZZ",
+        "shortNameCapitalPy": "YS",
+        "nameFullPy": "YUSHUZANGZUZIZHIZHOU",
+        "shortNameFullPy": "YUSHU",
+        "municipality": false
+      },
+      {
+        "code": "6328",
+        "name": "海西蒙古族藏族自治州",
+        "shortName": "海西",
+        "nameCapitalPy": "HXMGZZZZZZ",
+        "shortNameCapitalPy": "HX",
+        "nameFullPy": "HAIXIMENGGUZUZANGZUZIZHIZHOU",
+        "shortNameFullPy": "HAIXI",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "6400",
+    "name": "宁夏回族自治区",
+    "shortName": "宁夏",
+    "nameCapitalPy": "NXHZZZQ",
+    "nameFullPy": "NINGXIAHUIZUZIZHIQU",
+    "municipality": false,
+    "children": [
+      {
+        "code": "6401",
+        "name": "银川市",
+        "shortName": "银川",
+        "nameCapitalPy": "YCS",
+        "shortNameCapitalPy": "YC",
+        "nameFullPy": "YINCHUANSHI",
+        "shortNameFullPy": "YINCHUAN",
+        "municipality": false
+      },
+      {
+        "code": "6402",
+        "name": "石嘴山市",
+        "shortName": "石嘴山",
+        "nameCapitalPy": "SZSS",
+        "shortNameCapitalPy": "SZS",
+        "nameFullPy": "SHIZUISHANSHI",
+        "shortNameFullPy": "SHIZUISHAN",
+        "municipality": false
+      },
+      {
+        "code": "6403",
+        "name": "吴忠市",
+        "shortName": "吴忠",
+        "nameCapitalPy": "WZS",
+        "shortNameCapitalPy": "WZ",
+        "nameFullPy": "WUZHONGSHI",
+        "shortNameFullPy": "WUZHONG",
+        "municipality": false
+      },
+      {
+        "code": "6404",
+        "name": "固原市",
+        "shortName": "固原",
+        "nameCapitalPy": "GYS",
+        "shortNameCapitalPy": "GY",
+        "nameFullPy": "GUYUANSHI",
+        "shortNameFullPy": "GUYUAN",
+        "municipality": false
+      },
+      {
+        "code": "6405",
+        "name": "中卫市",
+        "shortName": "中卫",
+        "nameCapitalPy": "ZWS",
+        "shortNameCapitalPy": "ZW",
+        "nameFullPy": "ZHONGWEISHI",
+        "shortNameFullPy": "ZHONGWEI",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "6500",
+    "name": "新疆维吾尔自治区",
+    "shortName": "新疆",
+    "nameCapitalPy": "XJWWEZZQ",
+    "nameFullPy": "XINJIANGWEIWUERZIZHIQU",
+    "municipality": false,
+    "children": [
+      {
+        "code": "6501",
+        "name": "乌鲁木齐市",
+        "shortName": "乌鲁木齐",
+        "nameCapitalPy": "WLMQS",
+        "shortNameCapitalPy": "WLMQ",
+        "nameFullPy": "WULUMUQISHI",
+        "shortNameFullPy": "WULUMUQI",
+        "municipality": false
+      },
+      {
+        "code": "6502",
+        "name": "克拉玛依市",
+        "shortName": "克拉玛依",
+        "nameCapitalPy": "KLMYS",
+        "shortNameCapitalPy": "KLMY",
+        "nameFullPy": "KELAMAYISHI",
+        "shortNameFullPy": "KELAMAYI",
+        "municipality": false
+      },
+      {
+        "code": "6504",
+        "name": "吐鲁番市",
+        "shortName": "吐鲁番",
+        "nameCapitalPy": "TLFS",
+        "shortNameCapitalPy": "TLF",
+        "nameFullPy": "TULUFANSHI",
+        "shortNameFullPy": "TULUFAN",
+        "municipality": false
+      },
+      {
+        "code": "6505",
+        "name": "哈密市",
+        "shortName": "哈密",
+        "nameCapitalPy": "HMS",
+        "shortNameCapitalPy": "HM",
+        "nameFullPy": "HAMISHI",
+        "shortNameFullPy": "HAMI",
+        "municipality": false
+      },
+      {
+        "code": "6523",
+        "name": "昌吉回族自治州",
+        "shortName": "昌吉",
+        "nameCapitalPy": "CJHZZZZ",
+        "shortNameCapitalPy": "CJ",
+        "nameFullPy": "CHANGJIHUIZUZIZHIZHOU",
+        "shortNameFullPy": "CHANGJI",
+        "municipality": false
+      },
+      {
+        "code": "6527",
+        "name": "博尔塔拉蒙古自治州",
+        "shortName": "博尔塔拉",
+        "nameCapitalPy": "BETLMGZZZ",
+        "shortNameCapitalPy": "BETL",
+        "nameFullPy": "BOERTALAMENGGUZIZHIZHOU",
+        "shortNameFullPy": "BOERTALA",
+        "municipality": false
+      },
+      {
+        "code": "6528",
+        "name": "巴音郭楞蒙古自治州",
+        "shortName": "巴音郭楞",
+        "nameCapitalPy": "BYGLMGZZZ",
+        "shortNameCapitalPy": "BYGL",
+        "nameFullPy": "BAYINGUOLENGMENGGUZIZHIZHOU",
+        "shortNameFullPy": "BAYINGUOLENG",
+        "municipality": false
+      },
+      {
+        "code": "6529",
+        "name": "阿克苏地区",
+        "shortName": "阿克苏",
+        "nameCapitalPy": "AKSDQ",
+        "shortNameCapitalPy": "AKS",
+        "nameFullPy": "AKESUDIQU",
+        "shortNameFullPy": "AKESU",
+        "municipality": false
+      },
+      {
+        "code": "6530",
+        "name": "克孜勒苏柯尔克孜自治州",
+        "shortName": "克孜勒苏",
+        "nameCapitalPy": "KZLSKEKZZZZ",
+        "shortNameCapitalPy": "KZLS",
+        "nameFullPy": "KEZILESUKEERKEZIZIZHIZHOU",
+        "shortNameFullPy": "KEZILESU",
+        "municipality": false
+      },
+      {
+        "code": "6531",
+        "name": "喀什地区",
+        "shortName": "喀什",
+        "nameCapitalPy": "KSDQ",
+        "shortNameCapitalPy": "KS",
+        "nameFullPy": "KASHENDIQU",
+        "shortNameFullPy": "KASHEN",
+        "municipality": false
+      },
+      {
+        "code": "6532",
+        "name": "和田地区",
+        "shortName": "和田",
+        "nameCapitalPy": "HTDQ",
+        "shortNameCapitalPy": "HT",
+        "nameFullPy": "HETIANDIQU",
+        "shortNameFullPy": "HETIAN",
+        "municipality": false
+      },
+      {
+        "code": "6540",
+        "name": "伊犁哈萨克自治州",
+        "shortName": "伊犁",
+        "nameCapitalPy": "YLHSKZZZ",
+        "shortNameCapitalPy": "YL",
+        "nameFullPy": "YILIHASAKEZIZHIZHOU",
+        "shortNameFullPy": "YILI",
+        "municipality": false
+      },
+      {
+        "code": "6542",
+        "name": "塔城地区",
+        "shortName": "塔城",
+        "nameCapitalPy": "TCDQ",
+        "shortNameCapitalPy": "TC",
+        "nameFullPy": "TACHENGDIQU",
+        "shortNameFullPy": "TACHENG",
+        "municipality": false
+      },
+      {
+        "code": "6543",
+        "name": "阿勒泰地区",
+        "shortName": "阿勒泰",
+        "nameCapitalPy": "ALTDQ",
+        "shortNameCapitalPy": "ALT",
+        "nameFullPy": "ALETAIDIQU",
+        "shortNameFullPy": "ALETAI",
+        "municipality": false
+      }
+    ]
+  },
+  {
+    "code": "7000",
+    "name": "台湾省",
+    "shortName": "台湾",
+    "nameCapitalPy": "TAIWAN",
+    "nameFullPy": "TAIWANSHENG",
+    "municipality": false,
+    "children": [
+      {
+        "code": "7001",
+        "name": "台北市",
+        "shortName": "台北",
+        "nameCapitalPy": "TBS",
+        "shortNameCapitalPy": "TB",
+        "nameFullPy": "TAIBEISHI",
+        "shortNameFullPy": "TAIBEI",
+        "municipality": false
+      }
+    ]
+  }
+]

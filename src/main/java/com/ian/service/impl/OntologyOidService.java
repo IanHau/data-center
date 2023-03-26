@@ -2,6 +2,8 @@ package com.ian.service.impl;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.github.benmanes.caffeine.cache.Cache;
+import com.github.benmanes.caffeine.cache.Caffeine;
 import com.google.common.collect.ImmutableMap;
 import com.ian.config.OidGenerator;
 import com.ian.constant.OIDStr;
@@ -27,6 +29,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import static cn.hutool.core.lang.Validator.validateNotEmpty;
@@ -49,6 +52,10 @@ public class OntologyOidService {
     OntologyPropertyService propertyService;
     @Resource
     OidGenerator oidGenerator;
+    private final Cache<String, List<OidTreeVO>> treeCache = Caffeine.newBuilder()
+            .maximumSize(10_000)
+            .expireAfterWrite(5, TimeUnit.MINUTES)
+            .build();
 
     @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Throwable.class)
     public void createOid(OntologyOid input) {
@@ -138,6 +145,18 @@ public class OntologyOidService {
         Set<OntologyOidVO> leaves = new TreeSet<>(Comparator.comparing(OntologyOidVO::getTerm));
         travel(ontologyOid, leaves);
         return leaves;
+    }
+
+
+    public List<OidTreeVO> tree() {
+        List<OidTreeVO> cache = treeCache.getIfPresent("tree");
+        if (CollectionUtils.isNotEmpty(cache)) {
+            log.info("read cache success");
+            return cache;
+        }
+        List<OidTreeVO> tree = tree(null);
+        treeCache.put("tree", tree);
+        return tree;
     }
 
     public List<OidTreeVO> tree(String oid) {
