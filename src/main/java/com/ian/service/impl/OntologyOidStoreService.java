@@ -34,7 +34,6 @@ import java.io.InputStream;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * 平台OID数据存储服务
@@ -171,7 +170,34 @@ public class OntologyOidStoreService {
             .build(new CacheLoader<String, CountVO>() {
                 @Override
                 public CountVO load(String term) {
-                    return calculateTotal(term);
+                    CountVO homePageVO = new CountVO();
+                    OntologyOid ontologyOid = ontologyOidService.loadByTerm(term);
+
+                    List<Record> records = mongoTemplate.find(new Query(), Record.class, ontologyOid.getTableName());
+                    Map<String, List<Record>> species = records.stream().collect(Collectors.groupingBy(record -> record.get("species").toString()));
+
+                    List<CountVO.TypeNumber> typeNumbers = species.entrySet().stream().map(s -> {
+                        long count = s.getValue().size();
+                        return new CountVO.TypeNumber(s.getKey(), count);
+                    }).collect(Collectors.toList());
+
+                    //统计省市信息
+                    Aggregation distribution = Aggregation.newAggregation(
+                            Aggregation.group("selectArea").count().as("value"),
+                            Aggregation.project("value").and("selectArea").previousOperation()
+
+                    );
+                    AggregationResults<CountVO.Distribution> distributions = mongoTemplate.aggregate(distribution, ontologyOid.getTableName(), CountVO.Distribution.class);
+                    Map<String, Long> provinceStatisticalResult = distributions.getMappedResults()
+                            .stream().collect(Collectors.toMap(CountVO.Distribution::getSelectArea, CountVO.Distribution::getValue));
+
+                    List<CountVO.Distribution> distributionList = areaService.listProvinces().stream()
+                            .map(it -> new CountVO.Distribution(it.getShortName(), it.getCode(), MapUtils.getLong(provinceStatisticalResult, it.getShortName(), 0L)))
+                            .collect(Collectors.toList());
+
+                    homePageVO.setDistribution(distributionList);
+                    homePageVO.setTypeNumbers(typeNumbers);
+                    return homePageVO;
                 }
             });
 
@@ -182,54 +208,5 @@ public class OntologyOidStoreService {
         } catch (Exception e) {
             throw new ApplicationException("数据获取失败");
         }
-    }
-
-    private CountVO calculateTotal(String term) {
-        CountVO homePageVO = new CountVO();
-        OntologyOid ontologyOid = ontologyOidService.loadByTerm(term);
-        //各数据总统计数
-        List<CountVO.TypeNumber> typeNumbers = Stream.of(ontologyOid)
-                .map(oid -> {
-                    long count = mongoTemplate.count(new Query(), oid.getTableName());
-                    return new CountVO.TypeNumber(oid.getAlias(), count);
-                }).collect(Collectors.toList());
-
-        //物种统计
-        Aggregation specisAggr = Aggregation.newAggregation(
-                Aggregation.group("species").count().as("varietyNumber"),
-                Aggregation.project("varietyNumber").and("species").previousOperation()
-        );
-        AggregationResults<CountVO.SpeciesList> species = mongoTemplate.aggregate(specisAggr, ontologyOid.getTableName(), CountVO.SpeciesList.class);
-        List<CountVO.SpeciesList> speciesLists = species.getMappedResults();
-
-        //种质分类占比
-        Aggregation aggregation = Aggregation.newAggregation(
-                Aggregation.group("classification").count().as("categoryNumber"),
-                Aggregation.project("categoryNumber").and("classification").previousOperation()
-        );
-        AggregationResults<CountVO.ClassCount> ganodermalucidum = mongoTemplate.aggregate(aggregation, ontologyOid.getTableName(), CountVO.ClassCount.class);
-        List<CountVO.ClassCount> mappedResults = ganodermalucidum.getMappedResults();
-
-        //统计省市信息
-        Aggregation distribution = Aggregation.newAggregation(
-                Aggregation.group("selectArea").count().as("value"),
-                Aggregation.project("value").and("selectArea").previousOperation()
-
-        );
-        AggregationResults<CountVO.Distribution> distributions = mongoTemplate.aggregate(distribution, ontologyOid.getTableName(), CountVO.Distribution.class);
-        Map<String, Long> provinceStatisticalResult = distributions.getMappedResults()
-                .stream().collect(Collectors.toMap(CountVO.Distribution::getSelectArea, CountVO.Distribution::getValue));
-
-        List<CountVO.Distribution> distributionList = areaService.listProvinces().stream()
-                .map(it ->
-                        new CountVO.Distribution(it.getShortName(), it.getCode(), MapUtils.getLong(provinceStatisticalResult, it.getShortName(), 0L)))
-                .collect(Collectors.toList());
-
-
-        homePageVO.setSpeciesList(speciesLists);
-        homePageVO.setCategoryList(mappedResults);
-        homePageVO.setDistribution(distributionList);
-        homePageVO.setTypeNumbers(typeNumbers);
-        return homePageVO;
     }
 }
