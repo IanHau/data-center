@@ -85,7 +85,7 @@ public class OntologyOidStoreService {
         ontologyOidService.removeRecord(tableName, id);
     }
 
-    public Object search(GermplasmReq input, Pageable pageable) {
+    public PageImpl<Record> search(GermplasmReq input, Pageable pageable) {
         String tableName = input.getTableName();
         Condition condition = input.getCondition();
         Query query = new Query();
